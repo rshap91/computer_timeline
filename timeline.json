@@ -1,0 +1,771 @@
+[{
+  "date": "1790",
+  "name": "French Table Making Project",
+  "location": "France",
+  "description":"A project of hundreds of human “computers” to make new trigonometric and logarithmic tables.",
+  "people": [
+    {
+      "name": "Baron Gaspard de Prony",
+      "dob": null,
+      "place_of_birth": "France",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Directed by Baron Gaspard de Prony and under the order of Napolean.",
+    "Human computers were an important part of table-making for many functions not just mathematical computations, but also astronomy and navigational tables for ships at sea."
+  ],
+  "tags": [
+    "event"
+  ]
+},
+{
+  "date": "1804",
+  "name": "Invention of the Jacquard Loom",
+  "location": "France",
+  "description": "A Loom that automates various weaving patterns via the use of punched cards",
+  "people": [
+    {
+      "name": "Joseph-Marie Jacquard" ,
+      "dob": null,
+      "place_of_birth": "France" ,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Influential on the design of the first mechanical computers.",
+    "Punched cards were a major aspect of the first computers and a major part of IBMs sales in the 20th Century."
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1820",
+  "name": "Arithmometer",
+  "location": "Alsace France",
+  "description": "The first adding machine." ,
+  "people": [
+    {
+      "name": "Thomas de Colmar",
+      "dob": null,
+      "place_of_birth": "Alsace France",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Very slow machine that was not very effective or practical, but set the stage for future adding machines in the late 1800s"
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1822",
+  "name": "Charles Babbage proposes the Difference Engine",
+  "location": "England",
+  "description": "A machine that would calculate mathematical tables with a series of adding mechanisms and a printing mechanism.",
+  "people": [
+    {
+      "name": "Charles Babbage",
+      "dob": "1791",
+      "place_of_birth": "England" ,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Inspired by Gaspard de Prony table making project",
+    "The first miniature prototype was built in 1833, but the Babbage never finished a final version"
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1834",
+  "name": "The Analytical Engine",
+  "location": "England",
+  "description": "Babbage got carried away with the Difference Engine and designed a machine that could perform any mathematical computation whatsoever. This was called the Analytical Engine. ",
+  "people": [
+    {
+      "name": "Charles Babbage",
+      "dob": "1791",
+      "place_of_birth": "England" ,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "It was designed to include separate components for the computations and storing of numbers, named the Mill and Store respectively after the components of the Jacquard Loom.",
+    "Babbage designed the machine to be able to follow conditional programming instructions (eg 'if' logic).",
+    "Babbage obsessed about the machine for most of his life but it was never built. His obsession with it also derailed the Difference Engine project and he ultimately lost all of his funding."
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1842",
+  "name": "Sketch of the Analytical Engine",
+  "location": "France???",
+  "description": "Italian Mathematician Luigi Menabrea writes a detailed account of Babbages Analytical Engine titled Sketch of the Analytical Engine.",
+  "people": [
+    {
+      "name": "Luigi Menabrea",
+      "dob": null,
+      "place_of_birth": "Italy",
+      "link": null
+    },
+    {
+      "name": "Ada Lovelace",
+      "dob": null,
+      "place_of_birth": "Italy",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "A young mathematician and writer named Ada Lovelace adopted this writing to English. She was fond of Babagges work and portrayed the Analytical Engine in a fascinating light. She was a big supporter of Babages work and a major proponent of publishing it to the public.",
+    "The programming language Ada is named after Lovelace."
+  ],
+  "tags": [
+    "event"
+  ]
+},
+{
+  "date": "1874",
+  "name": "First commercially successful typewriter by Remington Company",
+  "location": "Milwaukee Wisconsin",
+  "description": "Was not the first ever typewriter, but was the first efficient typewriter that allowed typists to write faster than by hand.",
+  "people": [
+    {
+      "name": "Christopher Latham Scholes",
+      "dob": null,
+      "place_of_birth": "Milwaukee Wisconsin",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "When used at high speeds, if two letters that were close together were pressed too rapidly, they would clash and jam the machine. The solution to this was to move letters that were commonly used together far apart from each other. This resulted in the QWERTYUIOP keyboard that we still use today",
+    "The Remington company was a very successful office supply company in the early 19th century. This includes production and sales of early mechanical computers."
+  ],
+  "tags": [
+    "hardware",
+    "business",
+    "company"
+  ]
+},
+{
+  "date": "1879",
+  "name": "First Cash Register",
+  "location": "Dayton Ohio",
+  "description": "Restaurant owner James Ritty in Dayton Ohio thought his employees were stealing so invented 'Ritty’s Incorruptible Cashier'",
+  "people": [
+    {
+      "name": "James Ritty",
+      "dob": null,
+      "place_of_birth": "Dayton Ohio",
+      "link": null
+    },
+    {
+      "name": "John H. Patterson",
+      "dob": null,
+      "place_of_birth": null,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "James Ritty was not a succesful salesman. He sold exactly 1 machine in total to John H. Patterson"
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1884",
+  "name": "National Cash Register Company",
+  "location": null,
+  "description": "John H. Patterson buys James Ritty’s failed company and renames it to the National Cash Register Comopany NCR",
+  "people": [
+    {
+      "name": "John H. Patterson",
+      "dob": null ,
+      "place_of_birth": null,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Patterson and NCR were pioneers in office equipment sales. And had a huge impact/influence on the industry as well as the later creation and success of IBM.",
+    "NCR had the best sales team with a heavy focus on training and support, both for salesmen and for customers. "
+  ],
+  "tags": [
+    "company",
+    "event",
+    "business"
+  ]
+},
+{
+  "date": "1885",
+  "name": "The American Arithmometer Company and the Adder-Lister",
+  "location": null,
+  "description": "Williams S Burroughs founded the American Arithmometer Company (later renamed to Burroughs Adding Machine Company) and files a patent for his machine called the Adder-Lister.",
+  "people": [
+    {
+      "name": "William S Burroughs",
+      "dob": null,
+      "place_of_birth": null,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "The Adder-lister was inspired by the Arithmometer. It was a machine marketed primarily to banks that allowed you to add numbers together.",
+    "Was widely used by banks in the early 1900s",
+    "The American Arithmometer Company was later renamed to the Burroughs Adding Machine Company after Burroughs Death in..."
+  ],
+  "tags": [
+    "hardware",
+    "company",
+    "business"
+  ]
+},
+{
+  "date": "1887",
+  "name": "Felt & Tarrant Manufacturing Company and the Comptometer",
+  "location": "Chicago IL",
+  "description": "Dorr E. Felt and Robert Tarrant found the Felt & Tarrant Manufacturing Company in Chicago. They build a machine designed by Felt called the Compometer.",
+  "people": [
+    {
+      "name": "Dorr E. Felt",
+      "dob": null,
+      "place_of_birth": null,
+      "link": null
+    },
+    {
+      "name": "Robert Tarrant",
+      "dob": null,
+      "place_of_birth": null,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "The Comptometer was an adding machine like the Arithmometer, but was entirely key based, where keys were layed out in columns representing decimal places (1s, 10s, 100s etc). This made it much faster and more efficient to use.",
+    "The machines were widely used in offices for the first half of the 20th century"
+  ],
+  "tags": [
+    "business",
+    "company",
+    "hardware"
+  ]
+},
+{
+  "date": "1890",
+  "name": "Hollerith Tabulating System used for US Census",
+  "location": "United States",
+  "description": "Herman Hollerith designed a machine that could read punched cards and increment a mechanical counter. These machines were used in the 1890 census.",
+  "people": [
+    {
+      "name": "Herman Hollerith",
+      "dob": "1860" ,
+      "place_of_birth": null,
+      "link": null    }
+  ],
+  "bullets": [
+    "Using Hollerith's machines, the 1890 census was processed in 2 and a half years as apposed to the 1880 census which took 7 years and at about 2/3rds the cost.",
+    "The innovation was using the punched cards as the data medium. This was inspired by the Jacquard loom as well as things such as player pianos.",
+    "The machine had a number of pins that would be dropped onto the cards. If the card had been punched the pin would go through and encounter a mercury cup, which would complete a circuit and cause the counter to increment."
+  ],
+  "tags": [
+    "event",
+    "hardware"
+  ]
+},
+{
+  "date": "1895",
+  "name": "Thomas J Watson Joins NCR",
+  "location": null,
+  "description": "Thomas Watson joined NCR as a salesman.",
+  "people": [
+    {
+      "name": "Thomas J Watson" ,
+      "dob": null,
+      "place_of_birth": null,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Watson was a star salesman and quickly rose through the ranks until, in 1911, he was second in command to John Paterson, at which point Paterson fired him.",
+    "Watson went on to found IBM, the most successful computing company of most of the 20th century."
+  ],
+  "tags": [
+    "business",
+    "IBM"
+  ]
+},
+{
+  "date": "1896",
+  "name": "Hollerith Tabulating MAchine Company",
+  "location": null,
+  "description": "Herman Hollerith founded his company and started selling and renting his machines to to companies other than the Census Bureau.",
+  "people": [
+    {
+      "name": "Herman Hollerith",
+      "dob": "1860" ,
+      "place_of_birth": null,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "While the census was a very profitable job for Hollerith, it only occured once every 10 years."
+  ],
+  "tags": [
+    "company",
+    "business"
+  ]
+},
+{
+  "date": "1907",
+  "name": "James Powers replaces Hollerith as main contractor for the Census Bureau.",
+  "location": "United States",
+  "description": "New management did not agree to Hollerith",
+  "people": [
+    {
+      "name": "James Powers",
+      "dob": null,
+      "place_of_birth": null,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "James Powers was a Mechanical Engineer who became a competitor to Hollerith. He designed tabulators just like Holleriths Machines."
+  ],
+  "tags": [
+    "event"
+  ]
+},
+{
+  "date": "1911",
+  "name": "Computing Tabulating Recording Company (CTR)",
+  "location": null ,
+  "description": "Hollerith, who was experiencing health problems, sold his company (TMC) to Charles Flint. Flint Merged TMC with two other companies, the Computing Scale Company and the International Time Recording Company, forming the Computing Tabulating Recording Company or CTR.",
+  "people": [
+    {
+      "name": "Herman Hollerith",
+      "dob": "1860" ,
+      "place_of_birth": null,
+      "link": null
+    },
+    {
+      "name": "Thomas J Watson",
+      "dob": null  ,
+      "place_of_birth": null,
+      "link": null
+    },
+    {
+      "name": "Charles Flint",
+      "dob": null  ,
+      "place_of_birth": null,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Flint hired Thomas Watson as the General Manager of CTR.",
+    "Watson had the foresight to see how important Holleriths machine patents would be and he negotiated a lower salary in exchange for 5% of the companies profits. By 1934, this made him the highest paid businessman in America with a salary of $364,432.",
+    "Watson immediately went about implementing the business and sales practices he’d learned from NCR at CTR. Under his leadership, the companies income more than tripled over the next decade."
+  ],
+  "tags": [
+    "business",
+    "company"
+  ]
+},
+{
+  "date": "1911",
+  "name": "Powers Accounting Machine Company",
+  "location": null,
+  "description": "James Powers founds the Powers Accounting Machine Company. His company was one of CTRs/IBMs main competitors for the next few decades.",
+  "people": [
+    {
+      "name": "James Powers",
+      "dob": null ,
+      "place_of_birth": null ,
+      "link": null
+    }
+  ],
+  "bullets": [
+  ],
+  "tags": [
+    "company",
+    "business"
+  ]
+},
+{
+  "date": "1924",
+  "name": "IBM is born.",
+  "location": null ,
+  "description": "CTR renamed to International Business Machines (IBM).",
+  "people": [
+    {
+      "name": null ,
+      "dob": null ,
+      "place_of_birth": null ,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "IBM was the most successful computer/technology business for the next 40 years.",
+    "It pioneered computer research and development as well as sales practices that put it’s machines in offices and factories throughout the country."
+  ],
+  "tags": [
+    "business",
+    "company",
+    "IBM"
+  ]
+},
+{
+  "date": "1928",
+  "name": "Powers Accounting Machine Company Acquired by Remington Rand",
+  "location": null ,
+  "description": "Remington Rand (formerly the Remington Typewriter company) acquired powers and enhanced the competition against IBM.",
+  "people": [
+    {
+      "name": null ,
+      "dob": null ,
+      "place_of_birth": null ,
+      "link": null
+    }
+  ],
+  "bullets": [
+  ],
+  "tags": [
+    "business"
+  ]
+},
+{
+  "date": "1928",
+  "name": "Vanevar Bush Invents the Differential Analyzer",
+  "location": "MIT Cambridge Massachusetts, US" ,
+  "description": "A mechanical computer designed to solve differential equations.",
+  "people": [
+    {
+      "name": "Vanevar Bush" ,
+      "dob": "1890-03-11" ,
+      "place_of_birth": "Massachusetts, US" ,
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Differential Analyzer used 'ball and disk integrators' to perform integrations. By moving metal balls to different positions on a rotating disk, an output cylinder could be rotated at varying speeds representing different integration rates."
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1939",
+  "name": "John Vincent Atanasoff and Clifford Berry build the first electronic 'computer'",
+  "location": "Iowa State College",
+  "description":"",
+  "people": [
+    {
+      "name": "John Vincent Atanasoff",
+      "dob": "1903-10-04",
+      "place_of_birth": "Hamilton, NY",
+      "link": null
+    },
+    {
+      "name": "Clifford Berry",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Hardwired to solve linear equations",
+    "SWas not a stored program computer, but was fully electronic.",
+    "Introduced core concepts later adopted for other electronic computers such as using binary arithmetic."
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1943-01",
+  "name": "Harvard Mark I",
+  "location": "NY, US",
+  "description":"Built by Howard A",
+  "people": [
+    {
+      "name": "Howard Aiken",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    },
+    {
+      "name": "James Bryce",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Designed by Howard Aiken and James Bryce.",
+    "Originally called the IBM Automatic Sequence Controlled Calculator.",
+    "Built at IBM was then turned over to Harvard university a year later where it was named the Mark I.",
+    "One of the first programmable computers.",
+    "It was humongous, 51 ft long, weighing 5 tons, and had 750,000 parts",
+    "The machine was used to make mathematical tables, and in particular was used for ballistics tables by the Navy.",
+    "Considered a realization of Charles Babbage's Analytical Engine."
+  ],
+  "tags": [
+    "hardware",
+    "IBM"
+  ]
+},
+{
+  "date": "1943-04-09",
+  "name": "Construction of the ENIAC Begins.",
+  "location": "Moore School of Engineering PA, US",
+  "description":"The Electronic Numerical Integrator And Computer was the first totally electronic, programmable computer.",
+  "people": [
+    {
+      "name": "John Mauchly",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    },
+    {
+      "name": "John Presper Eckert",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Developed by John Mauchly and John Presper Eckert at the Moore school of engineering in PA",
+    "The design suffered many problems. The storage was inefficient and too small, it used a tremendous amount of parts including 18000 vacuum tubes, and was incredibly difficult to program.",
+    "Halfway through the construction, Mauchly and Eckert were joined by physicist John Von Neumann. Together they began designing a second model, the Electronic Discrete Variable Automatic Computer (EDVAC) which addressed some of the design problems of the ENIAC"
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1945-06-30",
+  "name": "A First Draft of a Report on the EDVAC",
+  "location": "PA US",
+  "description":"The Electronic Discrete Variable Automatic Computer was the successor to the ENIAC and this report, published by John Von Neumann, contained the full details of the architecture and desing of the computer.",
+  "people": [
+    {
+      "name": "John Von Neumann",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Commonly known as 'The EDVAC Report', Was a full detail on the architecture of the EDVAC and was the basis for almost all electronic computers built thereafter.",
+    "Used binary representations of numbers as apposed to the ENIAC which used decimal representations.",
+    "The main feature was that programs could be stored in memory and re-run as needed! This became an essentail part of what was called the 'Von Neumann Architecture' which all modern computers follow.",
+    "Von Neumann was a major advocate of publishing information on stored computing to as wide an audience as possible. Mauchly and Eckert on the other hand wanted to patent and commoditize the designs.",
+    "The EDVAC was eventually completed in August 1949 and used by the Ballistic Research Laboratory."
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1945-11",
+  "name": "The ENIAC is completed.",
+  "location": "Moore School of Engineering PA US",
+  "description":"It was 50 by 30ft and 1000x faster than the Harvard Mark I.",
+  "people": [
+    {
+      "name": "",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Its main use was as a show piece for media coverage.",
+    "It could run 5000 operations/second (1000x faster than the Harvard mark 1)."
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1946-10",
+  "name": "The Census Bureau Commission The UNIVAC.",
+  "location": "PA US.",
+  "description":"Mauchly and Eckert separated from John Von Neumann to start there own company. Their first job was to build the UNIVAC to replace the old card punch machines used by the Census Bureau.",
+  "people": [
+    {
+      "name": "John Mauchly",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    },
+    {
+      "name": "John Presper Eckert",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "John Mauchly and John Presper Eckert separated from John Von Neumann after the ENIAC was complete. Unlike Neumann they very much wanted to make a business out of building computers.",
+    "They formed their own company (Eckert and Mauchly’s Electronic Control Company) but were overly optimistic about the cost of building the machines as well as the current market for them, and struggled with finding funding until they were eventually Acquired by Remington Rand.",
+    "One of the main innovations of the UNIVAC was the use of Magnetic Tape to store data...",
+    "The machine was contracted for $300,000. Mauchly and Eckert estimated it would cost about $400,000 to build, but they were gravely mistaken. The actual cost nearly $1,000,000 and it took 5 years to complete."
+  ],
+  "tags": [
+    "business"
+  ]
+},
+{
+  "date": "1947-10",
+  "name": "Mauchly and Eckert begin work on the BINAC",
+  "location": "PA US",
+  "description":"Having run out of money, Mauchly and Eckert are desperate for another client. Finally the Northrop Aircraft Corporation commissioned them to build a much smaller, stored-program computer for the use of calculating missile trajectories. This computer would be called the Binary Automated Computer (BINAC).",
+  "people": [
+    {
+      "name": "John Mauchly",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    },
+    {
+      "name": "John Presper Eckert",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "This would be an easier task than the UNIVAC and Eckert and Mauchly jumped at the opportunity to rope in some more funding."
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1948-06-21",
+  "name": "The Manchester Baby",
+  "location": "Manchester University England",
+  "description":"The Manchester Baby, built by John Von Neumann and Frederic C. Williams, was the first functional stored-program computer.",
+  "people": [
+    {
+      "name": "John Von Neumann",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    },
+    {
+      "name": "Frederic C. Williams",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Based on the design principles of the EDVAC.",
+    "Is considered the first functioning “stored-program” computer.",
+    "Was not a very useful machine (limited memory, no printer, simple operations), but proved that stored program computers were possible.",
+    "Experimented with new memory system using cathode ray tubes. This memory ended up being faster than the previous memory technology which used Electronic Delay Lines (?), though more difficult to build."
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1949-05",
+  "name": "IBM announces the CPC",
+  "location": "US",
+  "description":"The Card-Programmed Electronic Calculator (CPC) was not a stored program computer, but rather an improvement on IBMs existing products using modern electronics.",
+  "people": [
+    {
+      "name": "",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "IBM was slow to adopt stored-program computers. Mostly they just improved their existing products by incorporating newer electronic components.",
+    "The CPC was not a stored-program computer, but actually an assembly of multiple electronic accounting and punch-card machines that IBM was able to successfully market to regular businesses.",
+    "Demand for the CPC pushed IBM to invest more heavily in electronic computers."
+  ],
+  "tags": [
+    "hardware",
+    "business",
+    "IBM"
+  ]
+},
+{
+  "date": "1949-05-06",
+  "name": "The EDSAC runs it’s first program",
+  "location": "Cambridge University England",
+  "description":"The Electronic Delay Storage Automatic Calculator (EDSAC), built by Maurice Wilkes, was a stored program computer based almost entirely on the design principles of Von Neuman's EDVAC report.",
+  "people": [
+    {
+      "name": "Maurice Wilkes",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "Can be considered the first, fully functional stored-program computer.",
+    "Many more stored program computers followed suit in the years to come including the UNIVAC and the BINAC."
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1949",
+  "name": "The BINAC is completed.",
+  "location": "University of Pennsylvania, PA US.",
+  "description":"Eckert and Mauchly complete the BINAC and ship to the Northrop Aircraft Corporation.",
+  "people": [
+    {
+      "name": "John Presper Eckert",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    },
+    {
+      "name": "John Mauchly",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "The machine didn't work that well and had numerous bugs, but was nonetheless less the first stored-program computer made and sold in the U.S."
+  ],
+  "tags": [
+    "hardware"
+  ]
+},
+{
+  "date": "1953",
+  "name": " IBM 650 Magnetic Drum Data-Processing Machine",
+  "location": null,
+  "description":"After the announcements of the BINAC and UNIVAC, IBM began to invest in R&D for electronic computers. The IBM 650 was their first electronic computer and though it was originally started in 1947 they hit numerous snags and didn't release it until 1953.",
+  "people": [
+    {
+      "name": "",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": [
+    "It’s key innovation was it’s use of spinning magnetic drums to store data.",
+    "It was a very flexible machine and was used across many different business and commercial applications."
+  ],
+  "tags": [
+    "hardware",
+    "IBM"
+  ]
+}
+]

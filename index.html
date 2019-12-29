@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css">
+<link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="node_modules/underscore/underscore-min.js"></script>
+<script src="node_modules/bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+
+
+<style type='text/css'>
+
+
+#tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 2px;
+    font: 12px sans-serif;
+    border: 0px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+#graph {
+  text-align: center;
+  align: center;
+}
+
+#topMain {
+    text-align: center;
+/*    width: 60px;
+    height: 28px;   */
+    margin: 0 auto;
+    padding: 2px;
+    font: 12px sans-serif;
+    border: 0px;
+    font-family: 'Gruppo';
+    font-size: 14px;
+}
+
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+#sliderLabelLeft {
+  display: inline-block;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#sliderLabelRight {
+  display: inline-block;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#sliderDiv {
+  margin: 20px;
+  padding: 20px;
+}
+
+#mainTextRight {
+  padding:50px;
+  font-family: 'Gruppo';
+  font-size: 14px;
+  text-align: right;
+}
+
+#bullets {
+  padding:50px;
+  font-family: 'Gruppo';
+  font-size: 14px;
+  text-align: left
+}
+
+.slider-handle {
+  width: 10px;
+  height: 40px;
+  vertical-align: middle;
+  border-radius: 4px;
+  margin-left: 0px;
+}
+
+</style>
+
+<div id='tooltip'></div>
+
+<div id="topMain" class="container-fluid">
+  <div class='row'>
+    <div class='col-sm-12'>
+      <img alt='pic', src='tux.jpeg'></img>
+      <p id='Name'></p>
+      <p id='Date'></p>
+      <p id="Description"></p>
+    </div>
+  </div>
+  <div class=row>
+    <div class=col-sm-12>
+        <label class="checkbox-inline">
+          <input id='hardwareCheckbox' class='tagCheckbox' type="checkbox" value="hardware" checked>Hardware
+        </label>
+        <label class="checkbox-inline">
+          <input id='softwareCheckbox' class='tagCheckbox' type="checkbox" value="software" checked>Software
+        </label>
+        <label class="checkbox-inline">
+          <input id='businessCheckbox' class='tagCheckbox' type="checkbox" value="business" checked>Business
+        </label>
+        <label class="checkbox-inline">
+          <input id='eventCheckbox' class='tagCheckbox' type="checkbox" value="event" checked>Other
+        </label>
+    </div>
+  </div>
+  <div class=row>
+    <div id="graph" class="col-sm-12"></div>
+  </div>
+
+  <div id=sliderDiv class='row'>
+    <div class='col-sm-1' style="text-align:right;">
+      <span id=sliderLabelLeft></span>
+    </div>
+    <div class='col-sm-10'>
+      <input id="timelineSlider" type="text" class="span2"/>
+    </div>
+    <div class='col-sm-1' style="text-align:left;">
+      <span id=sliderLabelRight></span>
+    </div>
+  </div>
+  <div class='row'>
+    <div id=bullets class='col-sm-6'>
+    </div>
+    <div id=mainTextRight class='col-sm-6'>
+    </div>
+  </div>
+</div>
+<script>
+
+// Javascript Dates are ALWAYS in current time zone...
+function utcDate(date) {
+  var date = new Date(date);
+  var now_utc =  Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(),
+                          date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
+
+ return new Date(now_utc + date.getTimezoneOffset()*60000 + 11000);
+}
+
+// Format Date
+// function dateFormat(date) {
+//   var monthNames = [
+//     "January", "February", "March",
+//     "April", "May", "June", "July",
+//     "August", "September", "October",
+//     "November", "December"
+//   ];
+//
+//   var day = date.getDate();
+//   var monthIndex = date.getMonth();
+//   var year = date.getFullYear();
+//
+//   return monthNames[monthIndex] + '/' + day + '/' + year;
+// }
+
+// String Format
+if (!String.prototype.format) {
+  String.prototype.format = function() {
+    var args = arguments;
+    return this.replace(/{(\d+)}/g, function(match, number) {
+      return typeof args[number] != 'undefined'
+        ? args[number]
+        : match
+      ;
+    });
+  };
+}
+
+// Array Membership
+Array.prototype.contains = function(obj) {
+    var i = this.length;
+    while (i--) {
+        if (this[i] === obj) {
+            return true;
+        }
+    }
+    return false;
+}
+
+
+// set the dimensions and margins of the graph
+var margin = {top: 50, right: 100, bottom: 50, left: 100},
+    width = 1200 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
+
+var radius = 10
+var stem = 25
+// append the svg object to the body of the page
+var svg = d3.select("#graph")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+var yearFormat = d3.timeFormat('%Y')
+var dateFormat = d3.timeFormat('%m/%d/%Y')
+
+
+//Read the data
+var ret = d3.json("timeline.json", function(data) {
+
+  // Pre-process
+  window.data = data
+  var dates = []
+  var formattedDates = []
+  var tags = {}
+  data.forEach(function(e, i) {
+    e['id'] = i
+    dates.push(utcDate(e['date']))
+    formattedDates.push(dateFormat(utcDate(e['date'])))
+    e['tags'].forEach((t) => {
+      if (t in tags) {
+        tags[t].push(i)
+      }
+      else {
+        tags[t] = [i]
+      }
+    })
+  })
+  window.dates = dates
+
+  // Configure Date Slider
+  var sliderAttrs = {
+    'tooltip_position':'bottom',
+    'min': 0,
+    'max': 100,
+    'step': 1,
+    'value': [0,100],
+    'max': dates.length-1,
+    'handle': 'square',
+    formatter: (x) => formattedDates[x[0]] + ' -- ' + formattedDates[x[1]]
+  }
+  var slider = $("#timelineSlider").bootstrapSlider(sliderAttrs);
+  $(".slider").css('width', '100%')
+  $(".slider-track").css('margin', 'auto')
+  $('#sliderLabelLeft').text(yearFormat(dates[0]))
+  $('#sliderLabelRight').text(yearFormat(dates[dates.length -1]))
+
+  // var links = []
+  // Object.values(tags).forEach((l) => {
+  //   l.forEach((id, i) => {
+  //     if (i == (l.length-1)) {
+  //       return
+  //     }
+  //     links.push({'source':id, 'target': l[i+1]})
+  //   })
+  // })
+  // window.tags = tags
+  // window.links = links
+
+  // Add X axis
+  var x = d3.scaleTime()
+    .domain([Math.min.apply(null, dates), Math.max.apply(null, dates)])
+    .range([0, width]);
+
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .attr('id', 'xAxis')
+    .style('font-size', 12)
+    .call(d3.axisBottom(x));
+
+  // Add Y axis
+  var y = d3.scaleLinear()
+    .domain([-100, 100])
+    .range([ height, 0]);
+  // svg.append("g")
+  //   .call(d3.axisLeft(y));
+
+
+  function apply_circle_attributes(selection) {
+    selection.attr('class', 'dot')
+             .attr("cx", function (d) { return x(utcDate(d['date']));})
+             .attr("cy", function(d, i) {return y(stem * ((-1)**i))})
+             .attr("r", radius)
+             .style("fill", function(d){ if (d['tags'].contains("software")){
+                                           return 'skyblue'
+                                         }
+                                         else if (d['tags'].contains("hardware")){
+                                           return 'firebrick'
+                                         }
+                                         else if (d['tags'].contains('business')){
+                                           return 'seagreen'
+                                         }
+                                         else {return 'black'}
+                                       })
+             .style('stroke', 'black')
+             .style("stroke-width", .25)
+             .style("stroke-dasharray", 1)
+             .on("mouseenter", function(d, i) {var circle = d3.select(this)
+                                               circle.style("stroke-width", 1.5)
+                                                     .style("stroke-dasharray", 0)
+                                               d3.select("#tooltip")
+                                                 .style("opacity", 1)
+                                                 .style("left", (d3.event.pageX) + "px")
+                                                 .style("top", (d3.event.pageY - 30 *(-1)**i) + 'px')
+                                                 .text(d['date'])
+                                            })
+             .on("mouseleave", function(d) { d3.select(this)
+                                               .style("stroke-width", .25)
+                                               .style("stroke-dasharray", 1)
+
+                                               d3.select("#tooltip")
+                                                 .style("opacity", 0)
+                                           })
+             .on("click", function(d) {var bullets = d3.select("#bullets")
+                                                       .selectAll('p')
+                                                       .data(d['bullets'])
+
+                                       bullets.enter().append('p').text(function(b){return b})
+                                       bullets.text(function(b) {return b})
+                                       bullets.exit().remove()
+
+                                       d3.select("#Name").text(d['name'])
+                                       d3.select("#Date").text(d['date'])
+                                       d3.select("#Description").text(d['description'])
+                                       })
+  }
+
+  function updateConnections(selection){
+             // .attr('y2', function (d,i) { return y(10*(-1)**i) + radius*(-1)**i})
+
+
+    selection.attr("class", "connectionLines")
+             .attr('x1', function (d) { return x(utcDate(d['date']))})
+             .attr('x2', function (d) { return x(utcDate(d['date']))})
+             .attr('y1', function (d,i) { return y(0)})
+             .attr('y2', function (d,i) { return y((stem) * ((-1)**i)) + (radius * (-1)**i)})
+             .attr('fill', 'white')
+             .attr('stroke', 'grey')
+             .attr('stroke-width', '2px')
+             .attr('opacity', 0.5)
+  }
+
+
+
+  function updateTimeline() {
+    var checked = _.chain($(".tagCheckbox").get())
+                   .filter((el) => el.checked)
+                   .map((el) => el.value)
+                   .value()
+
+    // filter on dates (can do this by position assuming data is ordered!)
+    min_max = slider.bootstrapSlider('getValue')
+    var subset = data.slice(min_max[0], min_max[1])
+    subset = _.filter(subset, (d) => d['tags'].some((t) => checked.contains(t)))
+    subset = _.filter(subset, )
+
+    // Update X axis
+    var dates = []
+    var formattedDates = []
+    subset.forEach(function(e) {
+                                dates.push(utcDate(e['date']))
+                                formattedDates.push(dateFormat(utcDate(e['date'])))
+                              })
+    x = d3.scaleTime()
+          .domain([Math.min.apply(null, dates), Math.max.apply(null, dates)])
+          .range([0, width]);
+    d3.select('#xAxis').call(d3.axisBottom(x));
+    window.x = x
+
+
+    // update nodes and links
+    var circles = svg.selectAll('.dot').data(subset)
+
+    apply_circle_attributes(circles.enter().append('circle'))
+    apply_circle_attributes(circles)
+    circles.exit().remove()
+
+    var link = svg.selectAll(".connectionLines")
+                  .data(subset)
+
+    updateConnections(link.enter().append("line"))
+    updateConnections(link)
+    link.exit().remove()
+
+  }
+
+  var midline = svg.append('line')
+                   .attr('id', 'midline')
+                   .attr('x1', x.range()[0])
+                   .attr('x2', x.range()[1])
+                   .attr('y1', y(0))
+                   .attr('y2', y(0))
+                   .attr('stroke', 'black')
+                   .attr('stroke-width', '2px')
+                   .attr('opacity', 0.7)
+
+
+
+   // Set the onchange attribute of the inputs
+   $('input').change(updateTimeline)
+   $(document).ready(updateTimeline)
+
+})
+
+
+
+</script>
