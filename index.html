@@ -90,6 +90,7 @@ pre {
   margin-left: 0px;
 }
 
+
 </style>
 
 <div id='tooltip'></div>
@@ -143,6 +144,10 @@ pre {
 </div>
 <script>
 
+////////////////////
+// HELPER FUNCTIONS
+////////////////////
+
 // Javascript Dates are ALWAYS in current time zone...
 function utcDate(date) {
   var date = new Date(date);
@@ -152,21 +157,6 @@ function utcDate(date) {
  return new Date(now_utc + date.getTimezoneOffset()*60000 + 11000);
 }
 
-// Format Date
-// function dateFormat(date) {
-//   var monthNames = [
-//     "January", "February", "March",
-//     "April", "May", "June", "July",
-//     "August", "September", "October",
-//     "November", "December"
-//   ];
-//
-//   var day = date.getDate();
-//   var monthIndex = date.getMonth();
-//   var year = date.getFullYear();
-//
-//   return monthNames[monthIndex] + '/' + day + '/' + year;
-// }
 
 // String Format
 if (!String.prototype.format) {
@@ -193,6 +183,31 @@ Array.prototype.contains = function(obj) {
 }
 
 
+// selected circle pulse
+// NOT USED
+
+function pulse(circle){
+
+  circle.attr('class', 'dot pulsing')
+
+  d3.selectAll('.pulsing')
+        .transition()
+        .duration(1000)
+        .attr('r', radius*1.5)
+        .style("stroke-width", 1.5)
+        .style("stroke-dasharray", 0)
+        .transition()
+        .duration(1000)
+        .attr('r', radius)
+        .style("stroke-width", .25)
+        .style("stroke-dasharray", 1)
+        .on("end", (d,i,t) => pulse(d3.select(t[0])))
+}
+
+
+///////////////
+// GRAPH SETUP
+//////////////
 // set the dimensions and margins of the graph
 var margin = {top: 50, right: 100, bottom: 50, left: 100},
     width = 1200 - margin.left - margin.right,
@@ -213,10 +228,17 @@ var yearFormat = d3.timeFormat('%Y')
 var dateFormat = d3.timeFormat('%m/%d/%Y')
 
 
+
+
+///////////////
+// MAIN
+///////////////
 //Read the data
 var ret = d3.json("timeline.json", function(data) {
 
   // Pre-process
+  data.sort((a,b) => utcDate(a['date']) > utcDate(b['date']) ? 1:-1)
+
   window.data = data
   var dates = []
   var formattedDates = []
@@ -267,14 +289,14 @@ var ret = d3.json("timeline.json", function(data) {
 
   // Add X axis
   var x = d3.scaleTime()
-    .domain([Math.min.apply(null, dates), Math.max.apply(null, dates)])
+    .domain([utcDate(Math.min.apply(null, dates)), utcDate(Math.max.apply(null, dates)+1)])
     .range([0, width]);
 
   svg.append("g")
     .attr("transform", "translate(0," + height + ")")
     .attr('id', 'xAxis')
     .style('font-size', 12)
-    .call(d3.axisBottom(x));
+    .call(d3.axisBottom(x).tickFormat(((x.domain()[1] - x.domain()[0])/3600000/24/365) > 5 ? yearFormat: dateFormat));
 
   // Add Y axis
   var y = d3.scaleLinear()
@@ -283,7 +305,7 @@ var ret = d3.json("timeline.json", function(data) {
   // svg.append("g")
   //   .call(d3.axisLeft(y));
 
-
+  // Update Circles and Bulleits
   function apply_circle_attributes(selection) {
     selection.attr('class', 'dot')
              .attr("cx", function (d) { return x(utcDate(d['date']));})
@@ -308,8 +330,8 @@ var ret = d3.json("timeline.json", function(data) {
                                                      .style("stroke-dasharray", 0)
                                                d3.select("#tooltip")
                                                  .style("opacity", 1)
-                                                 .style("left", (d3.event.pageX) + "px")
-                                                 .style("top", (d3.event.pageY - 30 *(-1)**i) + 'px')
+                                                 .style("left", this.getBoundingClientRect()['x'] + 'px')
+                                                 .style("top", (this.getBoundingClientRect()['y'] - (2*circle.attr('r')) *(-1)**i) + 'px')
                                                  .text(d['date'])
                                             })
              .on("mouseleave", function(d) { d3.select(this)
@@ -319,7 +341,11 @@ var ret = d3.json("timeline.json", function(data) {
                                                d3.select("#tooltip")
                                                  .style("opacity", 0)
                                            })
-             .on("click", function(d) {var bullets = d3.select("#bullets")
+             .on("click", function(d) {d3.selectAll('.dot').attr('r', radius)
+                                       var circle = d3.select(this)
+                                       circle.attr('r', radius*1.5)
+
+                                       var bullets = d3.select("#bullets")
                                                        .selectAll('p')
                                                        .data(d['bullets'])
 
@@ -333,6 +359,7 @@ var ret = d3.json("timeline.json", function(data) {
                                        })
   }
 
+  // Update the lines from circle to main timeline
   function updateConnections(selection){
              // .attr('y2', function (d,i) { return y(10*(-1)**i) + radius*(-1)**i})
 
@@ -349,7 +376,7 @@ var ret = d3.json("timeline.json", function(data) {
   }
 
 
-
+  // Main update function
   function updateTimeline() {
     var checked = _.chain($(".tagCheckbox").get())
                    .filter((el) => el.checked)
@@ -358,7 +385,7 @@ var ret = d3.json("timeline.json", function(data) {
 
     // filter on dates (can do this by position assuming data is ordered!)
     min_max = slider.bootstrapSlider('getValue')
-    var subset = data.slice(min_max[0], min_max[1])
+    var subset = data.slice(min_max[0], min_max[1]+1)
     subset = _.filter(subset, (d) => d['tags'].some((t) => checked.contains(t)))
     subset = _.filter(subset, )
 
@@ -370,9 +397,10 @@ var ret = d3.json("timeline.json", function(data) {
                                 formattedDates.push(dateFormat(utcDate(e['date'])))
                               })
     x = d3.scaleTime()
-          .domain([Math.min.apply(null, dates), Math.max.apply(null, dates)])
+          .domain([utcDate(Math.min.apply(null, dates)), utcDate(Math.max.apply(null, dates)+1)])
           .range([0, width]);
-    d3.select('#xAxis').call(d3.axisBottom(x));
+    // Conditionally format the x axis depending on date range
+    d3.select('#xAxis').call(d3.axisBottom(x).tickFormat(((x.domain()[1] - x.domain()[0])/3600000/24/365) > 5 ? yearFormat: dateFormat));
     window.x = x
 
 

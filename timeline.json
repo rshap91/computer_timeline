@@ -2,7 +2,7 @@
   "date": "1790",
   "name": "French Table Making Project",
   "location": "France",
-  "description": "A project of hundreds of human \u201ccomputers\u201d to make new trigonometric and logarithmic tables.",
+  "description": "A project of hundreds of human 'computers' to make new trigonometric and logarithmic tables.",
   "people": [{
     "name": "Baron Gaspard de Prony",
     "dob": null,
@@ -16,7 +16,7 @@
   "date": "1804",
   "name": "Invention of the Jacquard Loom",
   "location": "France",
-  "description": "A Loom that automates various weaving patterns via the use of punched cards",
+  "description": "A loom that automated various weaving patterns via the use of punched cards",
   "people": [{
     "name": "Joseph-Marie Jacquard",
     "dob": null,
@@ -51,14 +51,14 @@
     "place_of_birth": "England",
     "link": null
   }],
-  "bullets": ["Inspired by Gaspard de Prony table making project", "The first miniature prototype was built in 1833, but the Babbage never finished a final version"],
+  "bullets": ["Inspired by Gaspard de Prony's table making project", "The first miniature prototype was built in 1833, but the Babbage never finished a final version"],
   "tags": ["hardware"],
   "links": []
 }, {
   "date": "1834",
   "name": "The Analytical Engine",
   "location": "England",
-  "description": "Babbage got carried away with the Difference Engine and designed a machine that could perform any mathematical computation whatsoever. This was called the Analytical Engine. ",
+  "description": "Babbage got carried away with the Difference Engine and designed a machine that could perform any mathematical computation whatsoever. This was called the Analytical Engine.",
   "people": [{
     "name": "Charles Babbage",
     "dob": "1791",
@@ -105,7 +105,7 @@
   "date": "1879",
   "name": "First Cash Register",
   "location": "Dayton Ohio",
-  "description": "Restaurant owner James Ritty in Dayton Ohio thought his employees were stealing so invented 'Ritty\u2019s Incorruptible Cashier'",
+  "description": "Restaurant owner James Ritty in Dayton Ohio thought his employees were stealing so he invented 'Ritty\u2019s Incorruptible Cashier'",
   "people": [{
     "name": "James Ritty",
     "dob": null,
@@ -131,21 +131,21 @@
     "place_of_birth": null,
     "link": null
   }],
-  "bullets": ["Patterson and NCR were pioneers in office equipment sales. And had a huge impact/influence on the industry as well as the later creation and success of IBM.", "NCR had the best sales team with a heavy focus on training and support, both for salesmen and for customers. "],
+  "bullets": ["Patterson and NCR were pioneers in office equipment sales and had a huge impact/influence on the industry as well as the later creation and success of IBM.", "NCR had the best sales team with a heavy focus on training and support, both for salesmen and for customers."],
   "tags": ["company", "event", "business"],
   "links": []
 }, {
   "date": "1885",
   "name": "The American Arithmometer Company and the Adder-Lister",
   "location": null,
-  "description": "Williams S Burroughs founded the American Arithmometer Company (later renamed to Burroughs Adding Machine Company) and files a patent for his machine called the Adder-Lister.",
+  "description": "Williams S. Burroughs founded the American Arithmometer Company (later renamed to Burroughs Adding Machine Company) and files a patent for his machine called the Adder-Lister.",
   "people": [{
     "name": "William S Burroughs",
     "dob": null,
     "place_of_birth": null,
     "link": null
   }],
-  "bullets": ["The Adder-lister was inspired by the Arithmometer. It was a machine marketed primarily to banks that allowed you to add numbers together.", "Was widely used by banks in the early 1900s", "The American Arithmometer Company was later renamed to the Burroughs Adding Machine Company after Burroughs Death in..."],
+  "bullets": ["The Adder-lister was inspired by the Arithmometer. It was a machine marketed primarily to banks that allowed you to add numbers together.", "Was widely used by banks in the early 1900s", "The American Arithmometer Company was later renamed to the Burroughs Adding Machine Company after Burrough's death in 1898."],
   "tags": ["hardware", "company", "business"],
   "links": []
 }, {
@@ -406,7 +406,7 @@
   "date": "1946-10",
   "name": "The Census Bureau Commission The UNIVAC.",
   "location": "PA US.",
-  "description": "Mauchly and Eckert separated from John Von Neumann to start there own company. Their first job was to build the UNIVAC to replace the old card punch machines used by the Census Bureau.",
+  "description": "Mauchly and Eckert separated from John Von Neumann to start there own company. Their first job was to build the UNIVAC to replace the old punch card machines used by the Census Bureau.",
   "people": [{
     "name": "John Mauchly",
     "dob": null,
@@ -484,7 +484,7 @@
     "place_of_birth": "",
     "link": null
   }],
-  "bullets": ["IBM was slow to adopt stored-program computers. Mostly they just improved their existing products by incorporating newer electronic components.", "The CPC was not a stored-program computer, but actually an assembly of multiple electronic accounting and punch-card machines that IBM was able to successfully market to regular businesses.", "Demand for the CPC pushed IBM to invest more heavily in electronic computers."],
+  "bullets": ["IBM was slow to adopt stored-program computers. Mostly they just improved their existing products by incorporating newer electronic components.", "The CPC was not a stored-program computer, but actually an assembly of multiple electronic accounting and punch card machines that IBM was able to successfully market to regular businesses.", "Demand for the CPC pushed IBM to invest more heavily in electronic computers."],
   "tags": ["hardware", "business", "IBM"],
   "links": []
 }, {
@@ -511,10 +511,17 @@
     "dob": null,
     "place_of_birth": "",
     "link": null
-  }],
-  "bullets": ["Can be considered the first, fully functional stored-program computer.", "Many more stored program computers followed suit in the years to come including the UNIVAC and the BINAC.", "The first program was written by Beatrice Worsley and printed the sum of squares. Worsley received the first ever Ph.D in Computer Science from Cambridge under advisement from Alan Turing and Douglas Hartree (who had worked on the Differential Analyzer with Vannevar Bush).", "Wilkes won the A.M Turing award for the EDSAC in 1967"],
+    },
+    {
+      "name": "David Wheeler",
+      "dob": null,
+      "place_of_birth": "",
+      "link": null
+    }
+  ],
+  "bullets": ["Can be considered the first, fully functional stored-program computer.", "Many more stored program computers followed suit in the years to come including the UNIVAC and the BINAC.", "The first program was written by Beatrice Worsley and printed the sum of squares. Worsley received the first ever Ph.D in Computer Science from Cambridge under advisement from Alan Turing and Douglas Hartree (who had worked on the Differential Analyzer with Vannevar Bush).", "Wilkes won the A.M Turing award for the EDSAC in 1967", "Wilkes and Wheeler published a textbook in 1951 called The Preperation of Programs for an Electronic Digital Computer that describes the function, initial orders and coding practices used by the EDSAC team.Is the first piece of literature on the use of subroutines, or stored programs that could be used in other programs, a concept which David Wheeler is credited with inventing."],
   "tags": ["hardware", "software"],
-  "links": []
+  "links": ["https://www.google.com/books/edition/The_Preparation_of_Programs_for_an_Elect/HwkuAAAAIAAJ?hl=en&gbpv=1&printsec=frontcover"]
 }, {
   "date": "1949",
   "name": "The BINAC is completed.",
@@ -638,7 +645,7 @@
   "bullets": ["The previous memory systems used either mercury delay lines or electrostatic tubes.", "Access time for the core memory system in project Whirlwind was 9 micro seconds, as apposed to 25 microseconds with electrostatic tubes. Core memory was also much more reliable than the previous memory systems as well (Mercury delay lines often fell out of sync with the clock and were very sensitive to temperature).", "It became the main memory system of mainframe computers for the next 20 years until the invention of integrated circuits.", "IBM re-released their model 701 and 702 as models 704 and 705 with magnetic-core memory in 1954."],
   "tags": ["hardware"],
   "links": ["https://ethw.org/Magnetic-Core_Memory"]
-}, {
+},{
   "date": "1957",
   "name": "FORTRAN is released.",
   "location": null,
@@ -653,6 +660,49 @@
   "tags": ["software"],
   "links": []
 }, {
+  "date": "1957",
+  "name": "Digital Equipment Corporation (DEC)",
+  "location": "Maynard, Massachusetts",
+  "description": "The DEC was a computer company founded by Ken Olsen and Harlan Anderson from MITs Lincoln Laboratory. It became a very popular computer manufacturer in the 1960s and 70s and developed some of the first 'microcomputers' - predecessors to personal computers.",
+  "people": [{
+    "name": "Ken Olson",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Harlan Anderson",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["Olson and Anderson had worked on Project Whirlwind at Lincoln Laboratory.", "Their first computer was the Programmed Data Processor, or PDP-1. Released in 1960, the PDP series was targeted at the scientific community, rather than commercial businesses", "Because it was targeted at technical users, DEC didn't need to build additional hardware peripherals, or user friendly software packages and didn't provide hands on technical support. This made the computers much cheaper to manufacture and they sold at nearly a tenth of the price of most other computers at the time.", "The company was eventually acquired by Compaq and then in turn by Hewlett-Packard"],
+  "tags": ["hardware", "business"],
+  "links": []
+}, {
+  "date": "1957-10-01",
+  "name": "Fairchild Semiconductor",
+  "location": "San Jose California",
+  "description": "Fairchild Semiconductor was a key producer of Semiconductors in the 1960s and sold the first integrated circuits",
+  "people": [{
+    "name": "Robert Noyce",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Gordon Moore",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Sherman Fairchild",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["Robert Noyce and Gordon Moore (known for Moore's law) were among 8 engineers who founded Fairchild Semiconductor in San Jose California with funding from Sherman Fairchild.", "The company was responsible for many advancements in semiconductor technology including the first 'monolithic' integrated circuits built by Robert Noyce in 1959", "While the ideas around integrated circuits had been developed over the last decade notably by Jack Kilby at Texas Instruments, Noyces integrated circuits were the first to use silicon instead of germanium and became vastly more popular."],
+  "tags": ["hardware", "business"],
+  "links": []
+},{
   "date": "1959",
   "name": "CODASYL and COBOL",
   "location": null,
@@ -680,7 +730,108 @@
   "bullets": ["It used transistor based processors instead of the tubes used in previous models (such as the 650) and used the much faster magnetic core memory over the magnetic drums.", "While processors were all the rage - software still needed to be written for all of these machines. So alongside the Model 1401, IBM developed a programming system called Report Program Generator which allowed previous users of old accounting machines to learn to write there own software.", "IBM also started releasing and selling large suites of software for different business applications that companies could purchase and install on their IBM machines.", "The 1401 also came with a state of the art printer that was capable of printing 600 lines per minute - almost 4x faster than the standard accounting machines in use at the time.", "The 1401 quickly became integral to the banking, retail, insurance, and manufacturing industries"],
   "tags": ["IBM", "business", "hardware", "software"],
   "links": []
+},{
+  "date": "1960-03",
+  "name": "Man-Computer Symbiosis",
+  "location": "MIT Massachusetts",
+  "description": "'Man-Computer Symbiosis' was a paper published by MIT psychologist and computer scientist J.C.R Licklider.",
+  "people": [{
+    "name": "J.C.R Licklider",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["The main concept promoted in this paper was that computers should be machines designed to augment human intelligence rather than replace it. This was apposed to the mainstream idea of the day that computers would eventually develop into A.I that could rival humans in cognition and pattern matching and problem solving.", "Licklider argued that computers should be used to complete more low level tasks such as looking up facts, making graphs and presentations, and performing mathematical calculations, rather than high level problem solving."],
+  "tags": ["event"],
+  "links": []
 }, {
+  "date": "1961-11",
+  "name": "MIT's Compatible Time Sharing System (CTSS)",
+  "location": "MIT Massachusetts",
+  "description": "A time sharing computer was a computer with multiple terminals attached that allowed multiple users to independently use the computer.",
+  "people": [{
+    "name": "Christopher Strachey",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "John Mcarthy",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }, {
+    "name": "Robert Fano",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Fernando Corbato",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["The idea for time-sharing computers was initially published by British computer scientist Christopher Strachey, but picked up and developed by John Mcarthy (also a pioneer in A.I) and other professors at MIT.", "The CTSS was developed by Robert Fans and Fernando Corbato at MIT and was the first implementation of a time sharing computer.", "The computer only supported up to 3 terminals.","Time sharing computer systems would became hugely popular in the 1970s and had an influence on the development of the internet."],
+  "tags": ["hardware"],
+  "links": []
+}, {
+  "date": "1962-10",
+  "name": "J.C.R Licklider appointed head of the Information Processing Techniques Office (IPTO) at The Advanced Research Projects Agency (ARPA)",
+  "location": "",
+  "description": "Licklider, MIT psychologist and computer scientist, worked on multiple projects at ARPA that lead to the development of the Internet.",
+  "people": [{
+    "name": "J.C.R Licklider",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["Licklider was also a huge influence on the use of time sharing computers as well as interactive and personal computing.", "ARPA was initially developed in 1957 in a response to the Soviet Union launching it's first satellite."],
+  "tags": ["event"],
+  "links": []
+},{
+  "date": "1963-01",
+  "name": "Ivan Sutherland's Sketchpad",
+  "location": "MIT Massachusetts",
+  "description": "Ivan Sutherland earned his PH.D at MIT where he presented the Sketchpad, a computer design program he built at MIT's Lincoln laboratory that allowed users to draw directly onto a monitor using a light emitting pen",
+  "people": [{
+    "name": "Ivan Sutherland",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },
+  {
+    "name": "J.C.R Licklider",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["It was influenced by Vaneuvar Bush's Memex from 1945.", "It also was pioneering for Object Oriented Programming. The program was written in an assembler language on a computer called the TX-2, which had been built with specific memory architecture that allowed certain objects to be efficiently tied to 'instances' of that object and for changes of the master object to be propagated to the corresponding instances.", "It was heavily influential on the development of GUIs and Computer Aided Design (CAD) software.", "Sutherland went on to teach at the University of Utah where he worked at a research laboratory funded by J.C.R. Licklider and ARPA. His work was very much in line with Lickliders ideas from Man-Computer Symbiosis.", "Sutherland won the Turing award in 1988 for Sketchpad."],
+  "tags": ["hardware","event"],
+  "links": []
+},{
+  "date": "1963-07-01",
+  "name": "Project MAC",
+  "location": "MIT Massachusetts",
+  "description": "The Multiple Access Computer was a successor of the CTSS system developed by Robert Fano and Fernando Corbato 2 years earlier.",
+  "people": [{
+    "name": "Robert Fano",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Fernando Corbato",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "J.C.R Licklider",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["Was built around an IBM 7094 mainframe computer which was an evolution of the 700 series from 1954", "Was developed to be user friendly allowing users to write and run programs, perform calculations and even prepare and edit documents. Hence it was influential on the development of many word processors as well as the UNIX operating system.", "Funded by J.C.R Licklider at ARPA and developed by Fano and Corbato at MIT, Project MAC was a time-sharing system with 160 terminals where up to 30 could be active at any one time.", "It was fully completed in 1965 but was so in demand that a larger system was required. This lead to the development of a time-sharing system known as MULTICS."],
+  "tags": ["hardware", "IBM"],
+  "links": []
+},{
   "date": "1964",
   "name": "American Airlines and IBM complete SABRE",
   "location": "Briarcliff Manor New York U.S",
@@ -708,7 +859,145 @@
   "bullets": ["Before the System 360, IBM had a number of different mainframes on the market all of which had different mechanisms for programming and operating. Software suites for a given application (eg banking) had to be written for every model and if a user wanted to upgrade to a newer machine, they would have to purchase the corresponding software implementation or worse, re-write custom software from scratch.", "Largely built in New York, but also in IBM factories in England.", "The suite grew to over 14 different models by 1978.", "Introduced computing standards such as 8-bit bytes and byte-addressable memory"],
   "tags": ["hardware", "IBM", "business"],
   "links": []
-}, {
+},{
+  "date": "1964-05-01",
+  "name": "Dartmouth Time-Sharing System and BASIC.",
+  "location": "Dartmouth College Hanover, NH",
+  "description": "Was a time-sharing computer much like the the CTSS and Project Mac",
+  "people": [{
+    "name": "John Kemeny",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Thomas E. Kurtz",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["Developed at Dartmouth college by John Kemeny and Thomas E. Kurtz was fully operational on May 1st 1964.", "The computer equipment was supplied by General Electric but came without any software. This lead Kemeny and Kurtz to develop their own programming language called the Beginners All-purpose Symbolic Instruction Code, otherwise known as BASIC.", "Many schools began teaching BASIC and by 1968, 23 schools and colleges in New England were using the Dartmouth System.", "BASIC soon became the go to language for college math and science students and any computer manufacturer that wanted to sell to universities needed to include a BASIC compiler if it wanted to compete in that market."],
+  "tags": ["hardware", "software"],
+  "links": []
+},{
+  "date": "1965",
+  "name": "The PDP-8 Minicomputer",
+  "location": "Maynard Massachusetts",
+  "description": "Released by the Digital Equipment Corporation (DEC), The PDP-8 was one of the first computers to use integrated circuits and was thus far smaller and cheaper than most other computer in existence at the time.",
+  "people": [{
+    "name": "",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["The PDP-8 cost $18,000 (as apposed to most mainframes which could cost up to $1MM) and was the size of a packing case.", "As apposed to the mainframe and time sharing systems of the 60s, the PDP-8 was small and often used by only one or relatively few users, and marked the dawn of the personal computing era."],
+  "tags": ["hardware"],
+  "links": []
+},{
+  "date": "1967-01",
+  "name": "MULTICS",
+  "location": "MIT Massachusetts",
+  "description": "The MULTiplexed Information and Computer Service was a time-sharing computer that was the successor to Project MAC.",
+  "people": [{
+    "name": "Ken Thompson",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Dennis Ritchie",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["Developed by the same team at MIT it could support 1,000 terminals and up to 300 in use at the same time.", "While project MAC was developed around IBM hardware, for MULTICS the team decided to work with General Electric to build custom time-sharing hardware and Bell Labs to write the software.", "The system was not very successful and had a number of issues, but it lead to many novel innovations in computer and software design including, virtual memory, dynamic linking, online reconfiguration and hierarchical filesystems", "Two of the programmers who worked on MULTICS, Ken Thompson and Dennis Ritchie, went on to write the first version of the UNIX operating system.", "General Electric and Bell labs did eventually drop out of the project and MULTICs was taken over by Honeywell in 1970."],
+  "tags": [],
+  "links": []
+},{
+  "date": "1968-07-18",
+  "name": "Intel Corporation",
+  "location": "Santa Clara California",
+  "description": "Robert Noyce and Gordon Moore left Fairchild Semiconductors to found Intel Corp in Santa Clara California.",
+  "people": [{
+    "name": "Robert Noyce",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Gordon Moore",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["Intel went on to become (and still is) one of the largest semiconductor and computer processors"],
+  "tags": ["business"],
+  "links": []
+},{
+  "date": "1968-10-07",
+  "name": "The Nato Science Commitee",
+  "location": "Garmisch Germany",
+  "description": "The Nato Science Committee was a group of software and system designers from multiple industries across the world. They held two conferences in Garmisch Germany, one in 1968 and one in 1969 which developed principles and standards of software engineering.",
+  "people": [{
+    "name": "Edsger W. Dijkstra",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["In the 1960s, software production was as much as an art as a science. Everyone built software their own way, and production was heavily experimental.", "The Garmisch conferences helped organize software engineering as a true engineering discipline and many of the principles discussed and developed were adopted by software developers world wide.", "One of the members of the committee was Edsger W. Dijkstra, who coined the term structured programming, a style of programming that divided tasks into control structures such as sequences of sub routines, selection statements (such as if - then - else ), and iterations (eg for/while/do)", "Dijkstra published a letter called 'Go To Statement Considered Harmful' which stated that the commonly used 'GO TO' instruction, which allowed programs to jump to arbitrary lines of the program, was not only unnecessary in the structured programming paradigm, but also destructive to code in some cases, rendering it inefficient, less readable, and harder to maintain.", "Multiple programming languages have been created under the structured programming paradigm, namely ALGOL (an imperative programming language developed as an alternative to FORTRAN and COBOL), PL/I (the programming language released for IBMs system 360) Pascal (a language developed off of ALGOL), and ADA (originally developed by the US Department of Defense aimed at real-time systems)."],
+  "tags": ["software", "event"],
+  "links": []
+},{
+  "date": "1968-12",
+  "name": "The oN-Line System (NLS)",
+  "location": "Stanford Research Institute Menlo Park, California",
+  "description": "The NLS was one of the first machines to incorporate interactive and graphical elements such as the use of a Mouse.",
+  "people": [{
+    "name": "Douglas Engelbart",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },
+  {
+    "name": "J.C.R Licklider",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["One of the laboratories funded by ARPA was called the Human Factors Research Center founded at the Stanford Research Institute (SRI) in Menlo Park CA.", "The laboratory was founded in 1963 and headed by a man named Doug Engelbart. Engelbart's research was geared towards designing machines to manage personal information, a goal that was very much in line with J.C.R Lickliders vision of 'man-computer symbiosis", "The research center developed a machine called the 'oN-Line System' (NLS) which was demoed at The National Computer Conference in San Francisco in December 1968.", "The machine, while too expensive to be practical, was innovative in a number of ways, including the use of a computer 'mouse' and was the first public presentation of the use of hypertext documents.", "The presentation was influential on the development of the GUI or WIMP interface that made personal computers more user friendly in the 1980s."],
+  "tags": ["hardware"],
+  "links": []
+},{
+  "date": "1969",
+  "name": "Alan Kay and the Dynabook",
+  "location": "University of Utah, Salt Lake City UT",
+  "description": "The Dynabook was a conceptual, interactive computer tablet that would act as a personal information system. It would provide access to databases, perform fast information retrieval, and include various educational software.",
+  "people": [{
+    "name": "Alan Kay",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["In 1969 Alan Kay presented his PH.D thesis at the University of Utah on a machine he called the Reactive Engine, though later renamed to the Dynabook.", "Alan Kay was advised by Ivan Sutherland, who's work on a program called the Sketchpad in 1963 was heavily influential on Kay.", "Along with Doug Engelbart's Electronic Office, the Dynabook was a key influence on the development of the GUI and WIMP interface.","Alan Kay later went on to work at the Xerox Corporation."],
+  "tags": ["hardware", "event"],
+  "links": []
+},{
+  "date": "1969",
+  "name": "Unix and the C Programming Language",
+  "location": "Bell Labs Murray Hill, New Jersey",
+  "description": "Unix was an operating system developed by Dennis Ritchie and Ken Thompson at Bell Labs",
+  "people": [{
+    "name": "Ken Thompson",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Dennis Ritchie",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["Unsatisfied with the results of the MULTICS project, Bell Labs engineers Dennis Ritchie and Ken Thompson set out to make a better system with a simpler approach", "Working on a PDP-7 computer (predecessor to the PDP-8 made by Digital Equipment Corporation), they developed a simpler operating system originally called UNICS (a play on the name MULTICS).", "* Dennis Ritchie also created the C programming language which was a language specifically designed to work on operating systems.", "Over the next few years UNICS (eventually renamed UNIX) was developed and rewritten in C and ported to a PDP-11 computer.", "Unix and the C programming languages have been incredibly influential in computer sciences through today, leading to similar operating systems being developed at UC Berkley (BSD) and Sun Microsystems (SunOS) as well as the Linux operating system.", "Thompson and Ritchie won the Turing Award in 1983 for Unix."],
+  "tags": ["software"],
+  "links": []
+},{
   "date": "1970-06",
   "name": "IBM announces System 370",
   "location": "New York U.S.",
@@ -722,4 +1011,189 @@
   "bullets": ["True integrated circuits instead of Solid Logic Technology (SLT)", "Semiconductor memory replaced magnetic-core memory", "Supported time sharing via Dynamic Address Translation (DAT) which allowed for Virtual Memory. The DAT hardware was a precursor to the modern Memory Management Unit (MMU).", "This was not the first instance of virtual memory but served to popularize it in computer design."],
   "tags": ["hardware", "IBM", "business"],
   "links": []
-}]
+},{
+  "date": "1971-11",
+  "name": "4004 Microprocessor",
+  "location": "Santa Clara California",
+  "description": "Developed at intel by engineer Ted Hoff, the 4004 was the worlds first microprocessor.",
+  "people": [{
+    "name": "Ted Hoff",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["It had a transistor gate length of approximately 10µm (current cpus have transistor gates measured in the nanometers).", "It could process 4bits at a time, but led to the development of a number of more powerful models including the 8080 which was an 8bit processor.", "It was marketed commercially in November 1971 for $1,000", "It was originally developed for a calculator manufacturing company called Busicom, but at the time calculator prices were dropping so rapidly that Busicom negotiated down the price of the chip in exchange for the right for intel to market and sell it on their product lineup."],
+  "tags": ["hardware"],
+  "links": []
+},{
+  "date": "1973",
+  "name": "The Alto Computer",
+  "location": "Paolo Alto California",
+  "description": "The Alto computer was an experimental computer project started in 1973 in Paolo Alto CA by the Xerox Corporation.",
+  "people": [{
+    "name": "Alan Kay",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["Alan Kay from the University of Utah was amongst researches on the team that developed the Alto Computers.", "It was a Desktop computer that incorporated graphically displayed, typeset documents, much like Alan Kay had envisaged in his publication on the Dynabook."],
+  "tags": ["hardware"],
+  "links": []
+},{
+  "date": "1975-01",
+  "name": "Altair 8800",
+  "location": "Albuquerque NM",
+  "description": "The Altair was the first microprocessor-based computer, and can loosely be considered the first personal computer. ",
+  "people": [{
+    "name": "",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["It was produced in Albuquerque New Mexico by Micro Instumentation Telemetry Systems (MITS).", "As of the early 1970s, computers were still mostly out of reach of the general public. There were two main groups of computer users, hardcore technophile hobbyists, and academics and professionals using some form of a mainframe or time-sharing computer such as the Dartmouth time-sharing system or Multics etc. As the microprocessor industry boomed however, both computer prices and sizes fell and became more available to the lay person.", "The Altair 8800 was a small, inexpensive (<$400) minicomputer that was marketed in hobbyist magazines.", "The original consisted of a box with an intel 8080 microprocesor and some switches and lights. Even when assembled it barely did anything at all. It had to be programmed in binary by configuring the switches but allowed hobbyists to quickly assemble and tinker with a computer.", "The popularity of the 8800 however, opened up a large market for companies to develop add-ons to the machine such as teletypes, extra memory extensions, and additional storage.", "It also featured the S-100 Bus which became a standard design for computer Buses and was used in a number of hobbyist and home computers in the 70s and influenced the design of modern personal computers."],
+  "tags": ["hardware", "business"],
+  "links": []
+},{
+  "date": "1975-03",
+  "name": "Altair BASIC and Micro-Soft",
+  "location": "Albuquerque NM",
+  "description": "Childhood friends Paul Allen and Bill Gates saw a huge opportunity with the release of the Altair 8800 and developed a BASIC interpreter for the computer. They pitched the idea to MITS and delivered the interpreter in March 1975 as their newly formed company's first product. They called the company Micro-soft (initially with the hyphen).",
+  "people": [{
+    "name": "Paul Allen",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Bill Gates",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["Paul Allen later became software director at MITS.", "The BASIC interpreter allowed the Altair 8800 to be much a much more flexible machine and increased sales of peripherals and addons for MITS, partially because the machine would need more memory just to run the interpreter.", "Over the next two years, hundreds of computer and tech startups launched across the country, developing microcomputers, add-ons and software."],
+  "tags": ["software", "business"],
+  "links": []
+},{
+  "date": "1975-03-05",
+  "name": "Homebrew Computer Club and Apple",
+  "location": "Menlo Park CA",
+  "description": "The Homebrew Computer Club was first held in Menlo Park CA. It was amongst many clubs and stores that started in the 70s as computer hobbyists spread throughout the country. The club was a place where hobbyists could gather to chat, trade parts, or show off new tech. ",
+  "people": [{
+    "name": "Gordon French",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Steve Jobs",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Steve Wozniak",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["The club was most notably influential on the computer business in that Steve Jobs and Steve Wozniak attended it and through it entered the microcomputer business.", "The first meeting was held on March 5th in founder Gordon French's garage and Steve Wozniak was in attendance. Together with Steve Jobs they created the Apple Computer Company about a year later on April 1st 1976 in Cupertino California"],
+  "tags": ["event", "business"],
+  "links": []
+},{
+  "date": "1976-07",
+  "name": "The Apple I",
+  "location": "Menlo Park CA",
+  "description": "The Apple I was the first computer built by Steve Wozniak at Apple",
+  "people": [{
+    "name": "Steve Jobs",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Steve Wozniak",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["After attending the homebrew computer club, Steve Wozniak was inspired to build his own microcomputer. He built the prototype and demoed it at the club.", "The computer was basically just a circuit board, but was distinctly different from the Altair 8800 in that you could plug in a keyboard and a television to get working input and output.", "Upon seeing the interest in the computer Steve Jobs suggested they start selling it, initially to a store called the Byte Shop in Mountain View California."],
+  "tags": ["hardware"],
+  "links": []
+},{
+  "date": "1977-04",
+  "name": "The Apple II & The Commodore PET",
+  "location": "San Francisco CA",
+  "description": "The Apple II and the Commodore PET were two of the first personal computers developed in the late 1970s",
+  "people": [{
+    "name": "Steve Jobs",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Steve Wozniak",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["Steve Jobs and Wozniak realized that to successfully sell a commercial computer it would need to bundle all of the necessary components together. It would need to plug into an ordinary household outlet, have a keyboard and monitor, some form of long-term storage, and software to make it user friendly. Jobs and Wozniak designed such a machine and in April 1977, demoed the Apple II at the West Coast Computer Faire in San Francisco.", "Also released at the time was the Commodore PET. The two machines were similar and both became very popular.","In August the same year, Tandy Corporation entered the market with the TRS-80 and sold it through it's subsidiary, Radio Shack. The TRS-80 was cheaper than the PET and the Apple II as it had to be plugged in to a TV for output. The 3 computers were the most popular personal computers in the late 1970s.", "The growth of personal computers was largely defined by the software that was developed for them. While most software being developed up until the late 70s was system software, such as Microsoft Basic, personal computers opened up the door of possibilities for developing application software. The key applications that allowed personal computers to become effective business tools were spreadsheets, word processors, and databases."],
+  "tags": ["hardware", "business"],
+  "links": []
+},{
+  "date": "1981-05",
+  "name": "The Xerox Star",
+  "location": "Chicago IL",
+  "description": "In 1981, Xerox developed and presented a commercial version of the Alto called the Xerox Star, or alternatively, the model 8010 workstation, at the National Computer Conference in Chicago IL.",
+  "people": [{
+    "name": "",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["It had a GUI and a mouse and incorporated the now familiar desktop look that included icons and folders.", "The presentation itself was very well received, but the product itself didn't do too well. Technically the machine was ahead of it's time, but it was too expensive and not well marketed.", "It did however have an impact on Steve Jobs, who upon visiting the Xerox Paolo Alto Research Center (PARC) in 1979, is quoted as saying 'Why isn't Xerox marketing this? .. You could blow everybody away!'"],
+  "tags": ["hardware", "business"],
+  "links": []
+},{
+  "date": "1981-08-12",
+  "name": "Project Chess and MS-DOS",
+  "location": "Boca Raton Florida",
+  "description": "While late to the game, IBM finally decided to enter the personal computer market in 1980 when they began to design their first machine in an IBM factory in Boca Raton Florida. The project was known a project chess.",
+  "people": [{
+    "name": "",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["In July 1980 IBM approached Microsoft headquarters to develop the operating system. At the time Microsoft was too small to actually develop an operating system from scratch so Bill Gates purchased a piece of software from a firm called Seattle Computer Products for $30,000 and adapted it for IBMs use.", "The IBM PC along with their new operating system, MS-DOS, went on sale on August 12th 1981.","They were a huge success, largely due to IBM's brand awareness and propelled personal computers into the public market. Over the next few years the IBM PC became the industry standard, driving many start up PC firms out of business while the rest were forced to clone IBMs design and develop IBM compatible machines.", "The one exception was Apple. Steve Job's vision for the company was to make computer that were more user friendly and Apple attempted to differentiate themselves by designing  better, more user friendly software than Microsoft."],
+  "tags": ["IBM", "hardware", "software"],
+  "links": []
+},{
+  "date": "1983-01-19",
+  "name": "The Lisa",
+  "location": "Cupertino California",
+  "description": "The Lisa was Apples response to the Xerox Star. It was similarly designed with all the user interactive features of the Star including GUI and Mouse.",
+  "people": [{
+    "name": "",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["However, it was a very complex machine and worked sluggishly. It was extremely overpriced and quickly became a complete failure."],
+  "tags": ["hardware", "business"],
+  "links": []
+},{
+  "date": "1984-01-24",
+  "name": "The Macintosh",
+  "location": "Cupertino California",
+  "description": "The Macintosh was a personal computer developed by Apple that featured a GUI, built-in screen and a mouse.",
+  "people": [{
+    "name": "Steve Jobs",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  },{
+    "name": "Jef Raskin",
+    "dob": null,
+    "place_of_birth": "",
+    "link": null
+  }],
+  "bullets": ["The Macintosh project was initially started in 1979 by Jef Raskin, manager of advanced systems at Apple, but was overtaken by Steve Jobs in 1982.", "Initially the design of the computer was done by just 8 engineers, but as release got closer the team was expanded to 47 people. All 47 signed their name into the molding for the original Macintosh case, and these cases are now highly valuable collectors items.", "On January 22nd, Apple aired their famous Super Bowl ad in which a young woman storms into a room full of sullen, grey clad workers watching a Big Brother like figure on a large viewing monitor and smashes the monitor with a sledge hammer.", "The Macintosh was released two days later and received a lot of media attention. It was much sleeker than the Lisa and was a fifth of the price, but was not the huge commercial success apple had been hoping for.", "It was popular amongst media and publishing companies as well as schools, as its ease of use made it ideal for students or children. Unfortunately it was not a huge success in the business market, which largely still ran on IBM machines.", "In an attempt to break into the business market, apple hired many external software companies to design business applications for the Macintosh, but most were unsuccessful. In fact the main software company to benefit from designing applications for the Macintosh in the 1980s was Microsoft.", "Developing software for Apple, Microsoft improved upon it's software design for business applications, and got a first hand look into the technology that power the Macintosh's GUI which influenced the design of the Windows Operating system."],
+  "tags": ["hardware", "business"],
+  "links": []
+}
+]
