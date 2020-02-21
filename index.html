@@ -2,11 +2,16 @@
 <meta charset="utf-8">
 
 <!-- Load Bootstrap -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css">
-<link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+<link rel="stylesheet" href="node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+
+
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="node_modules/underscore/underscore-min.js"></script>
@@ -14,7 +19,6 @@
 
 
 <style type='text/css'>
-
 
 #tooltip {
     position: absolute;
@@ -90,11 +94,9 @@ pre {
   margin-left: 0px;
 }
 
-
 </style>
 
 <div id='tooltip'></div>
-
 <div id="topMain" class="container-fluid">
   <div class='row'>
     <div class='col-sm-12'>
@@ -106,18 +108,9 @@ pre {
   </div>
   <div class=row>
     <div class=col-sm-12>
-        <label class="checkbox-inline">
-          <input id='hardwareCheckbox' class='tagCheckbox' type="checkbox" value="hardware" checked>Hardware
-        </label>
-        <label class="checkbox-inline">
-          <input id='softwareCheckbox' class='tagCheckbox' type="checkbox" value="software" checked>Software
-        </label>
-        <label class="checkbox-inline">
-          <input id='businessCheckbox' class='tagCheckbox' type="checkbox" value="business" checked>Business
-        </label>
-        <label class="checkbox-inline">
-          <input id='eventCheckbox' class='tagCheckbox' type="checkbox" value="event" checked>Other
-        </label>
+      <select id=tagSelect class="selectpicker" data-live-search="true">
+        <option>All</option>
+      </select>
     </div>
   </div>
   <div class=row>
@@ -158,6 +151,27 @@ function utcDate(date) {
 }
 
 
+function getGeo(event) {
+  var key=KEY
+  if (!event.location){
+    return event.location;
+  }
+  r = $.ajax(
+      'http://www.mapquestapi.com/geocoding/v1/address?key='+key+'&location='+event.location,
+      {success: (r) => {
+        var loc = r.results[0].locations[0]
+        event.location = [loc.adminArea5, loc.adminArea3, loc.adminArea1].filter((e => (e != null) & (e.length>0))).join(' ')
+        event.latlng = loc.latLng
+        if (!_.pluck(tags, 'tag').contains(event.location)){
+            tags.push({"tag": event.location, "group": "location"})
+        }
+        event['tags'].push(event.location)
+      }}
+  )
+}
+
+
+
 // String Format
 if (!String.prototype.format) {
   String.prototype.format = function() {
@@ -181,6 +195,9 @@ Array.prototype.contains = function(obj) {
     }
     return false;
 }
+
+
+
 
 
 // selected circle pulse
@@ -235,209 +252,235 @@ var dateFormat = d3.timeFormat('%m/%d/%Y')
 ///////////////
 //Read the data
 var ret = d3.json("timeline.json", function(data) {
+  d3.json("tags.json", function(tags) {
 
-  // Pre-process
-  data.sort((a,b) => utcDate(a['date']) > utcDate(b['date']) ? 1:-1)
-
-  window.data = data
-  var dates = []
-  var formattedDates = []
-  var tags = {}
-  data.forEach(function(e, i) {
-    e['id'] = i
-    dates.push(utcDate(e['date']))
-    formattedDates.push(dateFormat(utcDate(e['date'])))
-    e['tags'].forEach((t) => {
-      if (t in tags) {
-        tags[t].push(i)
-      }
-      else {
-        tags[t] = [i]
-      }
-    })
-  })
-  window.dates = dates
-
-  // Configure Date Slider
-  var sliderAttrs = {
-    'tooltip_position':'bottom',
-    'min': 0,
-    'max': 100,
-    'step': 1,
-    'value': [0,100],
-    'max': dates.length-1,
-    'handle': 'square',
-    formatter: (x) => formattedDates[x[0]] + ' -- ' + formattedDates[x[1]]
-  }
-  var slider = $("#timelineSlider").bootstrapSlider(sliderAttrs);
-  $(".slider").css('width', '100%')
-  $(".slider-track").css('margin', 'auto')
-  $('#sliderLabelLeft').text(yearFormat(dates[0]))
-  $('#sliderLabelRight').text(yearFormat(dates[dates.length -1]))
-
-  // var links = []
-  // Object.values(tags).forEach((l) => {
-  //   l.forEach((id, i) => {
-  //     if (i == (l.length-1)) {
-  //       return
-  //     }
-  //     links.push({'source':id, 'target': l[i+1]})
-  //   })
-  // })
-  // window.tags = tags
-  // window.links = links
-
-  // Add X axis
-  var x = d3.scaleTime()
-    .domain([utcDate(Math.min.apply(null, dates)), utcDate(Math.max.apply(null, dates)+1)])
-    .range([0, width]);
-
-  svg.append("g")
-    .attr("transform", "translate(0," + height + ")")
-    .attr('id', 'xAxis')
-    .style('font-size', 12)
-    .call(d3.axisBottom(x).tickFormat(((x.domain()[1] - x.domain()[0])/3600000/24/365) > 5 ? yearFormat: dateFormat));
-
-  // Add Y axis
-  var y = d3.scaleLinear()
-    .domain([-100, 100])
-    .range([ height, 0]);
-  // svg.append("g")
-  //   .call(d3.axisLeft(y));
-
-  // Update Circles and Bulleits
-  function apply_circle_attributes(selection) {
-    selection.attr('class', 'dot')
-             .attr("cx", function (d) { return x(utcDate(d['date']));})
-             .attr("cy", function(d, i) {return y(stem * ((-1)**i))})
-             .attr("r", radius)
-             .style("fill", function(d){ if (d['tags'].contains("software")){
-                                           return 'skyblue'
-                                         }
-                                         else if (d['tags'].contains("hardware")){
-                                           return 'firebrick'
-                                         }
-                                         else if (d['tags'].contains('business')){
-                                           return 'seagreen'
-                                         }
-                                         else {return 'black'}
-                                       })
-             .style('stroke', 'black')
-             .style("stroke-width", .25)
-             .style("stroke-dasharray", 1)
-             .on("mouseenter", function(d, i) {var circle = d3.select(this)
-                                               circle.style("stroke-width", 1.5)
-                                                     .style("stroke-dasharray", 0)
-                                               d3.select("#tooltip")
-                                                 .style("opacity", 1)
-                                                 .style("left", this.getBoundingClientRect()['x'] + 'px')
-                                                 .style("top", (this.getBoundingClientRect()['y'] - (2*circle.attr('r')) *(-1)**i) + 'px')
-                                                 .text(d['date'])
-                                            })
-             .on("mouseleave", function(d) { d3.select(this)
-                                               .style("stroke-width", .25)
-                                               .style("stroke-dasharray", 1)
-
-                                               d3.select("#tooltip")
-                                                 .style("opacity", 0)
-                                           })
-             .on("click", function(d) {d3.selectAll('.dot').attr('r', radius)
-                                       var circle = d3.select(this)
-                                       circle.attr('r', radius*1.5)
-
-                                       var bullets = d3.select("#bullets")
-                                                       .selectAll('p')
-                                                       .data(d['bullets'])
-
-                                       bullets.enter().append('p').text(function(b){return b})
-                                       bullets.text(function(b) {return b})
-                                       bullets.exit().remove()
-
-                                       d3.select("#Name").text(d['name'])
-                                       d3.select("#Date").text(d['date'])
-                                       d3.select("#Description").text(d['description'])
-                                       })
-  }
-
-  // Update the lines from circle to main timeline
-  function updateConnections(selection){
-             // .attr('y2', function (d,i) { return y(10*(-1)**i) + radius*(-1)**i})
-
-
-    selection.attr("class", "connectionLines")
-             .attr('x1', function (d) { return x(utcDate(d['date']))})
-             .attr('x2', function (d) { return x(utcDate(d['date']))})
-             .attr('y1', function (d,i) { return y(0)})
-             .attr('y2', function (d,i) { return y((stem) * ((-1)**i)) + (radius * (-1)**i)})
-             .attr('fill', 'white')
-             .attr('stroke', 'grey')
-             .attr('stroke-width', '2px')
-             .attr('opacity', 0.5)
-  }
-
-
-  // Main update function
-  function updateTimeline() {
-    var checked = _.chain($(".tagCheckbox").get())
-                   .filter((el) => el.checked)
-                   .map((el) => el.value)
-                   .value()
-
-    // filter on dates (can do this by position assuming data is ordered!)
-    min_max = slider.bootstrapSlider('getValue')
-    var subset = data.slice(min_max[0], min_max[1]+1)
-    subset = _.filter(subset, (d) => d['tags'].some((t) => checked.contains(t)))
-    subset = _.filter(subset, )
-
-    // Update X axis
+    window.data = data
+    window.tags = tags
     var dates = []
     var formattedDates = []
-    subset.forEach(function(e) {
-                                dates.push(utcDate(e['date']))
-                                formattedDates.push(dateFormat(utcDate(e['date'])))
-                              })
-    x = d3.scaleTime()
-          .domain([utcDate(Math.min.apply(null, dates)), utcDate(Math.max.apply(null, dates)+1)])
-          .range([0, width]);
-    // Conditionally format the x axis depending on date range
-    d3.select('#xAxis').call(d3.axisBottom(x).tickFormat(((x.domain()[1] - x.domain()[0])/3600000/24/365) > 5 ? yearFormat: dateFormat));
-    window.x = x
+    var tag_event_map = _.pluck(tags, 'tag').reduce((a,b)=> (a[b]=null,a),{})
 
 
-    // update nodes and links
-    var circles = svg.selectAll('.dot').data(subset)
-
-    apply_circle_attributes(circles.enter().append('circle'))
-    apply_circle_attributes(circles)
-    circles.exit().remove()
-
-    var link = svg.selectAll(".connectionLines")
-                  .data(subset)
-
-    updateConnections(link.enter().append("line"))
-    updateConnections(link)
-    link.exit().remove()
-
-  }
-
-  var midline = svg.append('line')
-                   .attr('id', 'midline')
-                   .attr('x1', x.range()[0])
-                   .attr('x2', x.range()[1])
-                   .attr('y1', y(0))
-                   .attr('y2', y(0))
-                   .attr('stroke', 'black')
-                   .attr('stroke-width', '2px')
-                   .attr('opacity', 0.7)
+    // Pre-process
+    data.forEach(function(e, i) {
+      e['id'] = i
+      // format dates
+      dates.push(utcDate(e['date']))
+      formattedDates.push(dateFormat(utcDate(e['date'])))
 
 
+      // geocode locations
+      getGeo(e)
 
-   // Set the onchange attribute of the inputs
-   $('input').change(updateTimeline)
-   $(document).ready(updateTimeline)
+      // Add people as tags
+      e.people.forEach((p) => {
+        if (!p.name) {
+          return
+        }
+        if (!_.pluck(tags, 'tag').contains(p.name)){
+            tags.push({"tag": p.name, "group": "person"})
+        }
+        e['tags'].push(p.name)
+      })
+      // map tags to events
+      e['tags'].forEach((t) => {
+        if (t in tags) {
+          tag_event_map[t].push(i)
+        }
+        else {
+          tag_event_map[t] = [i]
+        }
+      })
 
+    })
+    window.dates = dates
+    data.sort((a,b) => utcDate(a['date']) > utcDate(b['date']) ? 1:-1)
+    tags.sort((a,b) => a.tag > b.tag ? 1:-1)
+
+
+    // Update Dropdown
+    _.pluck(tags, 'group').forEach((t) => $('#tagSelect').append('<optgroup label="' + t + '" id="optionGroup-' + t + '"</optgroup>'))
+    tags.forEach((t) => $('#optionGroup-'+t.group).append("<option>" + t.tag + "</option>"))
+    $('.selectpicker').selectpicker('refresh')
+
+    // Configure Date Slider
+    var sliderAttrs = {
+      'tooltip_position':'bottom',
+      'min': 0,
+      'max': 100,
+      'step': 1,
+      'value': [0,100],
+      'max': dates.length-1,
+      'handle': 'square',
+      formatter: (x) => formattedDates[x[0]] + ' -- ' + formattedDates[x[1]]
+    }
+    var slider = $("#timelineSlider").bootstrapSlider(sliderAttrs);
+    $(".slider").css('width', '100%')
+    $(".slider-track").css('margin', 'auto')
+    $('#sliderLabelLeft').text(yearFormat(dates[0]))
+    $('#sliderLabelRight').text(yearFormat(dates[dates.length -1]))
+
+    // var links = []
+    // Object.values(tags).forEach((l) => {
+    //   l.forEach((id, i) => {
+    //     if (i == (l.length-1)) {
+    //       return
+    //     }
+    //     links.push({'source':id, 'target': l[i+1]})
+    //   })
+    // })
+    // window.tags = tags
+    // window.links = links
+
+    // Add X axis
+    var x = d3.scaleTime()
+      .domain([utcDate(Math.min.apply(null, dates)), utcDate(Math.max.apply(null, dates)+1)])
+      .range([0, width]);
+
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .attr('id', 'xAxis')
+      .style('font-size', 12)
+      .call(d3.axisBottom(x).tickFormat(((x.domain()[1] - x.domain()[0])/3600000/24/365) > 5 ? yearFormat: dateFormat));
+
+    // Add Y axis
+    var y = d3.scaleLinear()
+      .domain([-100, 100])
+      .range([ height, 0]);
+    // svg.append("g")
+    //   .call(d3.axisLeft(y));
+
+    // Update Circles and Bulleits
+    function apply_circle_attributes(selection) {
+      selection.attr('class', 'dot')
+               .attr("cx", function (d) { return x(utcDate(d['date']));})
+               .attr("cy", function(d, i) {return y(stem * ((-1)**i))})
+               .attr("r", radius)
+               .style("fill", function(d){ if (d['tags'].contains("software")){
+                                             return 'skyblue'
+                                           }
+                                           else if (d['tags'].contains("hardware")){
+                                             return 'firebrick'
+                                           }
+                                           else if (d['tags'].contains('business')){
+                                             return 'seagreen'
+                                           }
+                                           else {return 'black'}
+                                         })
+               .style('stroke', 'black')
+               .style("stroke-width", .25)
+               .style("stroke-dasharray", 1)
+               .on("mouseenter", function(d, i) {var circle = d3.select(this)
+                                                 circle.style("stroke-width", 1.5)
+                                                       .style("stroke-dasharray", 0)
+                                                 d3.select("#tooltip")
+                                                   .style("opacity", 1)
+                                                   .style("left", this.getBoundingClientRect()['x'] + 'px')
+                                                   .style("top", (this.getBoundingClientRect()['y'] - (2*circle.attr('r')) *(-1)**i) + 'px')
+                                                   .text(d['date'])
+                                              })
+               .on("mouseleave", function(d) { d3.select(this)
+                                                 .style("stroke-width", .25)
+                                                 .style("stroke-dasharray", 1)
+
+                                                 d3.select("#tooltip")
+                                                   .style("opacity", 0)
+                                             })
+               .on("click", function(d) {d3.selectAll('.dot').attr('r', radius)
+                                         var circle = d3.select(this)
+                                         circle.attr('r', radius*1.5)
+
+                                         var bullets = d3.select("#bullets")
+                                                         .selectAll('p')
+                                                         .data(d['bullets'])
+
+                                         bullets.enter().append('p').text(function(b){return b})
+                                         bullets.text(function(b) {return b})
+                                         bullets.exit().remove()
+
+                                         d3.select("#Name").text(d['name'])
+                                         d3.select("#Date").text(d['date'])
+                                         d3.select("#Description").text(d['description'])
+                                         })
+    }
+
+    // Update the lines from circle to main timeline
+    function updateConnections(selection){
+               // .attr('y2', function (d,i) { return y(10*(-1)**i) + radius*(-1)**i})
+
+
+      selection.attr("class", "connectionLines")
+               .attr('x1', function (d) { return x(utcDate(d['date']))})
+               .attr('x2', function (d) { return x(utcDate(d['date']))})
+               .attr('y1', function (d,i) { return y(0)})
+               .attr('y2', function (d,i) { return y((stem) * ((-1)**i)) + (radius * (-1)**i)})
+               .attr('fill', 'white')
+               .attr('stroke', 'grey')
+               .attr('stroke-width', '2px')
+               .attr('opacity', 0.5)
+    }
+
+
+    // Main update function
+    function updateTimeline() {
+      var selected = $('#tagSelect').val()
+
+      // filter on dates (can do this by position assuming data is ordered!)
+      min_max = slider.bootstrapSlider('getValue')
+      var subset = data.slice(min_max[0], min_max[1]+1)
+      if (selected != 'All') {
+        subset = _.filter(subset, (d) => d['tags'].some((t) => t==selected))
+      }
+
+      // Update X axis
+      var dates = []
+      var formattedDates = []
+      subset.forEach(function(e) {
+                                  dates.push(utcDate(e['date']))
+                                  formattedDates.push(dateFormat(utcDate(e['date'])))
+                                })
+      x = d3.scaleTime()
+            .domain([utcDate(Math.min.apply(null, dates)), utcDate(Math.max.apply(null, dates)+1)])
+            .range([0, width]);
+      // Conditionally format the x axis depending on date range
+      d3.select('#xAxis').call(d3.axisBottom(x).tickFormat(((x.domain()[1] - x.domain()[0])/3600000/24/365) > 5 ? yearFormat: dateFormat));
+      window.x = x
+
+
+      // update nodes and links
+      var circles = svg.selectAll('.dot').data(subset)
+
+      apply_circle_attributes(circles.enter().append('circle'))
+      apply_circle_attributes(circles)
+      circles.exit().remove()
+
+      var link = svg.selectAll(".connectionLines")
+                    .data(subset)
+
+      updateConnections(link.enter().append("line"))
+      updateConnections(link)
+      link.exit().remove()
+
+    }
+
+    var midline = svg.append('line')
+                     .attr('id', 'midline')
+                     .attr('x1', x.range()[0])
+                     .attr('x2', x.range()[1])
+                     .attr('y1', y(0))
+                     .attr('y2', y(0))
+                     .attr('stroke', 'black')
+                     .attr('stroke-width', '2px')
+                     .attr('opacity', 0.7)
+
+
+
+     // Set the onchange attribute of the inputs
+     $('#tagSelect').change(updateTimeline)
+     $(document).ready(updateTimeline)
+
+ })
 })
-
 
 
 </script>

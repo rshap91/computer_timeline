@@ -1,0 +1,22 @@
+[
+  {"tag":"punch card", "group":"keywords"},
+  {"tag":"ibm", "group":"keywords"},
+  {"tag":"company", "group":"keywords"},
+  {"tag":"program", "group":"keywords"},
+  {"tag":"hardware", "group":"keywords"},
+  {"tag":"software", "group":"keywords"},
+  {"tag":"memory", "group":"keywords"},
+  {"tag":"business", "group":"keywords"},
+  {"tag":"language", "group":"keywords"},
+  {"tag":"whirlwind", "group":"keywords"},
+  {"tag":"project", "group":"keywords"},
+  {"tag": "project mac", "group": "keywords"},
+  {"tag": "multics", "group": "keywords"},
+  {"tag":"electronic", "group":"keywords"},
+  {"tag":"electric", "group":"keywords"},
+  {"tag": "apple", "group": "company"},
+  {"tag": "imb", "group": "company"},
+  {"tag": "microsoft", "group": "company"},
+  {"tag": "intel", "group": "company"},
+  {"tag": "bell labs", "group": "company"}
+]

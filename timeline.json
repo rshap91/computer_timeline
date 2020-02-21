@@ -292,7 +292,7 @@
 }, {
   "date": "1928",
   "name": "Vanevar Bush Invents the Differential Analyzer",
-  "location": "MIT Cambridge Massachusetts, US",
+  "location": "Massachusetts Institute of Technology Cambridge Massachusetts, US",
   "description": "A mechanical computer designed to solve differential equations.",
   "people": [{
     "name": "Vanevar Bush",
@@ -316,10 +316,10 @@
   }, {
     "name": "Clifford Berry",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
-  "bullets": ["Hardwired to solve linear equations", "SWas not a stored program computer, but was fully electronic.", "Introduced core concepts later adopted for other electronic computers such as using binary arithmetic."],
+  "bullets": ["Hardwired to solve linear equations", "Was not a stored program computer, but was fully electronic.", "Introduced core concepts later adopted for other electronic computers such as using binary arithmetic."],
   "tags": ["hardware"],
   "links": []
 }, {
@@ -330,12 +330,12 @@
   "people": [{
     "name": "Howard Aiken",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }, {
     "name": "James Bryce",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Designed by Howard Aiken and James Bryce.", "Originally called the IBM Automatic Sequence Controlled Calculator.", "Built at IBM was then turned over to Harvard university a year later where it was named the Mark I.", "One of the first programmable computers.", "It was humongous, 51 ft long, weighing 5 tons, and had 750,000 parts", "The machine was used to make mathematical tables, and in particular was used for ballistics tables by the Navy.", "Considered a realization of Charles Babbage's Analytical Engine."],
@@ -349,12 +349,12 @@
   "people": [{
     "name": "John Mauchly",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }, {
     "name": "John Presper Eckert",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Developed by John Mauchly and John Presper Eckert at the Moore school of engineering in PA", "The design suffered many problems. The storage was inefficient and too small, it used a tremendous amount of parts including 18000 vacuum tubes, and was incredibly difficult to program.", "Halfway through the construction, Mauchly and Eckert were joined by physicist John Von Neumann. Together they began designing a second model, the Electronic Discrete Variable Automatic Computer (EDVAC) which addressed some of the design problems of the ENIAC"],
@@ -363,12 +363,12 @@
 }, {
   "date": "1943",
   "name": "U.S Beaureau of Aeronautics establish Project Whirlwind",
-  "location": "Massachusetts US",
+  "location": "Massachusetts Institute of Technology Massachusetts United States",
   "description": "Headed by MIT grad Jay W. Forrester, Project Whirlwind's goal was to develop a realtime, computerized general use flight simulator.",
   "people": [{
     "name": "Jay W. Forrester",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["The project would go for over 8 years and cost well over $2MM (10x it\u2019s original budget), but would lead to a major breakthrough in real-time computing.", "Previous mechanical simulations had been slow, unrealistic, and needed to be custom built for different planes and scenarios. Whirlwind was to be customizable to accommodate multiple scenarios for any plane."],
@@ -377,12 +377,12 @@
 }, {
   "date": "1945-06-30",
   "name": "A First Draft of a Report on the EDVAC",
-  "location": "PA US",
+  "location": "Pennsylvania United States",
   "description": "The Electronic Discrete Variable Automatic Computer was the successor to the ENIAC and this report, published by John Von Neumann, contained the full details of the architecture and desing of the computer.",
   "people": [{
     "name": "John Von Neumann",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Commonly known as 'The EDVAC Report', Was a full detail on the architecture of the EDVAC and was the basis for almost all electronic computers built thereafter.", "Used binary representations of numbers as apposed to the ENIAC which used decimal representations.", "The main feature was that programs could be stored in memory and re-run as needed! This became an essentail part of what was called the 'Von Neumann Architecture' which all modern computers follow.", "Von Neumann was a major advocate of publishing information on stored computing to as wide an audience as possible. Mauchly and Eckert on the other hand wanted to patent and commoditize the designs.", "The EDVAC was eventually completed in August 1949 and used by the Ballistic Research Laboratory."],
@@ -391,12 +391,12 @@
 }, {
   "date": "1945-11",
   "name": "The ENIAC is completed.",
-  "location": "Moore School of Engineering PA US",
+  "location": "Moore School of Engineering Pennsylvania United States",
   "description": "It was 50 by 30ft and 1000x faster than the Harvard Mark I.",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Its main use was as a show piece for media coverage.", "It could run 5000 operations/second (1000x faster than the Harvard mark 1)."],
@@ -405,17 +405,17 @@
 }, {
   "date": "1946-10",
   "name": "The Census Bureau Commission The UNIVAC.",
-  "location": "PA US.",
+  "location": "Pennsylvania United States",
   "description": "Mauchly and Eckert separated from John Von Neumann to start there own company. Their first job was to build the UNIVAC to replace the old punch card machines used by the Census Bureau.",
   "people": [{
     "name": "John Mauchly",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }, {
     "name": "John Presper Eckert",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["John Mauchly and John Presper Eckert separated from John Von Neumann after the ENIAC was complete. Unlike Neumann they very much wanted to make a business out of building computers.", "They formed their own company (Eckert and Mauchly\u2019s Electronic Control Company) but were overly optimistic about the cost of building the machines as well as the current market for them, and struggled with finding funding until they were eventually Acquired by Remington Rand.", "One of the main innovations of the UNIVAC was the use of Magnetic Tape to store data...", "The machine was contracted for $300,000. Mauchly and Eckert estimated it would cost about $400,000 to build, but they were gravely mistaken. The actual cost nearly $1,000,000 and it took 5 years to complete."],
@@ -424,12 +424,12 @@
 }, {
   "date": "1947",
   "name": "Project Whirlwind taken over by the Office of Naval Research (ONR):",
-  "location": "Massachusetts U.S.",
+  "location": "Massachusetts United States.",
   "description": "",
   "people": [{
     "name": "Jay W. Forrester",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["With the war over Project Whirlwind was for the most part put on the back burner. Budgets were cut, infuriating Jay Forrester who had a somewhat neurotic, if not maniacal approach towards research and development.", "One of the main issues with the project was that there was currently no memory technology fast enough to meet the needs of real-time computing. Forrester was constantly researching new technologies. One lab technician was quoted saying, 'Jay took a bunch of stuff and went off in a corner of the lab by himself. Nobody knew what he was doing, and he showed no inclination to tell us'.", "Forrester however was supported by ONR technical consultant Perry Crawford, also an MIT grad.", "For many years the project seemed to be a complete failure and waste of money."],
@@ -438,17 +438,17 @@
 }, {
   "date": "1947-10",
   "name": "Mauchly and Eckert begin work on the BINAC",
-  "location": "PA US",
+  "location": "Pennsylvania United States",
   "description": "Having run out of money, Mauchly and Eckert are desperate for another client. Finally the Northrop Aircraft Corporation commissioned them to build a much smaller, stored-program computer for the use of calculating missile trajectories. This computer would be called the Binary Automated Computer (BINAC).",
   "people": [{
     "name": "John Mauchly",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }, {
     "name": "John Presper Eckert",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["This would be an easier task than the UNIVAC and Eckert and Mauchly jumped at the opportunity to rope in some more funding."],
@@ -462,12 +462,12 @@
   "people": [{
     "name": "John Von Neumann",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }, {
     "name": "Frederic C. Williams",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Based on the design principles of the EDVAC.", "Is considered the first functioning \u201cstored-program\u201d computer.", "Was not a very useful machine (limited memory, no printer, simple operations), but proved that stored program computers were possible.", "Experimented with new memory system using cathode ray tubes. This memory ended up being faster than the previous memory technology which used Electronic Delay Lines (?), though more difficult to build."],
@@ -479,9 +479,9 @@
   "location": "US",
   "description": "The Card-Programmed Electronic Calculator (CPC) was not a stored program computer, but rather an improvement on IBMs existing products using modern electronics.",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["IBM was slow to adopt stored-program computers. Mostly they just improved their existing products by incorporating newer electronic components.", "The CPC was not a stored-program computer, but actually an assembly of multiple electronic accounting and punch card machines that IBM was able to successfully market to regular businesses.", "Demand for the CPC pushed IBM to invest more heavily in electronic computers."],
@@ -495,7 +495,7 @@
   "people": [{
     "name": "David Wheeler",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["The EDSACs memory consisted of 512 35-bit \u201cwords\u201d each of which could be split into two 17 bit halves.", "The Assembler code allowed programmers to write instructions using a simpler notation that used English characters and decimal numbers instead of binary codes."],
@@ -509,13 +509,13 @@
   "people": [{
     "name": "Maurice Wilkes",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
     },
     {
       "name": "David Wheeler",
       "dob": null,
-      "place_of_birth": "",
+      "place_of_birth": null,
       "link": null
     }
   ],
@@ -525,17 +525,17 @@
 }, {
   "date": "1949",
   "name": "The BINAC is completed.",
-  "location": "University of Pennsylvania, PA US.",
+  "location": "University of Pennsylvania, Pennsylvania United States",
   "description": "Eckert and Mauchly complete the BINAC and ship to the Northrop Aircraft Corporation.",
   "people": [{
     "name": "John Presper Eckert",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }, {
     "name": "John Mauchly",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["The machine didn't work that well and had numerous bugs, but was nonetheless less the first stored-program computer made and sold in the U.S."],
@@ -547,9 +547,9 @@
   "location": "Manchester England",
   "description": "Completed only months ahead of the UNIVAC in Manchester England, is considered the worlds first general purpose, commercially sold electronic computer.",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Ferranti was a UK based electrical engineering company and was otherwise not a major player in the computer industry.", "Based on the designs of the Manchester Baby Computer from 1948"],
@@ -558,17 +558,17 @@
 }, {
   "date": "1951-03-30",
   "name": "The UNIVAC is completed.",
-  "location": "University of Pennsylvania, PA US.",
+  "location": "University of Pennsylvania, Pennsylvania United States",
   "description": "Unable to fund their projects, Eckert and Mauchly sold their company to Remington Rand but were retained as leaders for the UNIVAC project. Now backed by Remington Rand funding, they were able to complete the UNIVAC though it was not shipped to the Census Beaureu until the next year.",
   "people": [{
     "name": "John Presper Eckert",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }, {
     "name": "John Mauchly",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Remington Rand sold a number of UNIVAC computers which became the go to brand for mainframe computers for the next decade."],
@@ -577,22 +577,22 @@
 }, {
   "date": "1951-04-20",
   "name": "The first version of Project Whirlwind is completed.",
-  "location": "MIT Massachusetts US",
+  "location": "Massachusetts Institute of Technology Massachusetts United States",
   "description": "Forrester completes the first design of the flight simulator just in time as the ONR completely slashes their budget entirely. The first version of project Whirlwind was hardly performant but was a good enough prototype to attract the attention of George E. Valley, who was a scientific advisor for the Air Force. Due to rising Cold War tensions, the Air Force was looking to invest in new technology and Project Whirlwind became the center piece of this investment. With this new investment, Jay Forrester and grad student William N. Papian went on to develop a new memory technology called Magnetic-Core Memory which was much faster than all other memory technology at the time. After two years of research, they implemented magnetic core memory into Project Whirlwind making it by far the fastest computer currently in existence.",
   "people": [{
     "name": "Jay W. Forrester",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }, {
     "name": "William N. Papian",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }, {
     "name": "George E. Valley",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Project Whirlwind had a major influence on many industries in the mid to late 20th century. It was the center piece of the Semi-Automatic Ground Environment (SAGE) defense system used by the Air Force, and real time computing revolutionized the airline industry in the 1960s.", "Project Whirlwind was the first computer to operate in bit-parallel mode instead of bit-serial mode allowing multiple bits of information transfer to occur concurrently at each clock-cycle of the computer.", "It also popularized the use of Cathode Ray Tubes for computer graphics"],
@@ -601,12 +601,12 @@
 }, {
   "date": "1952",
   "name": "Grace Murray Hopper completes the A-0 Compiler",
-  "location": "U.S.",
+  "location": "United States.",
   "description": "",
   "people": [{
     "name": "Grace Murray Hopper",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Grace Murray Hopper was a technician for Remington Rand who worked on the UNIVAC and had previously worked on the Harvard Mark I.", "The A-0 compiler was more of a linker than a true compiler in that it was a coded list of mathematical subroutines.", "The A-0 system was however further developed in the 1950s until it became the B-0 compiler, otherwise known as FLOW-MATIC", "These systems were hugely influential on the development of the COBOL language.", "Hopper was a badass. She was also an Admiral in the Navy. (Show this bitch's picture!)"],
@@ -618,9 +618,9 @@
   "location": null,
   "description": "After the announcements of the BINAC and UNIVAC, IBM began to invest in R&D for electronic computers. The IBM 650 was their first electronic computer and though it was originally started in 1947 they hit numerous snags and didn't release it until 1953.",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["It\u2019s key innovation was it\u2019s use of spinning magnetic drums to store data.", "It was a very flexible machine and was used across many different business and commercial applications.", "IBM also developed other models at the same time called the model 701 and 702 that were very similar to the UNIVAC.", "IBM had an advantage in terms of marketing and were smart in designing the 650 so that all the components were modular, making transportation and setup much easier than the cumbersome UNIVAC.", "IBM offered discounts to universities and then established training and computing courses at those universities all taught around the model 650."],
@@ -629,17 +629,17 @@
 }, {
   "date": "1953-08-08",
   "name": "Jay Forrester and Bill Papian implement Magnetic Core Memory",
-  "location": "MIT Massachusetts U.S.",
+  "location": "Massachusetts Institute of Technology Massachusetts United States",
   "description": "Magnetic Core Memory was a much faster replacement for the alternative memory technology of the day. A bit was composed of a torrid (ring) of some hard magnetic material threaded with wire. An electric current could magnetic the core in either a clockwise or counter-clockwise direction allowing for a 0 or 1 value.",
   "people": [{
     "name": "Jay W. Forrester",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }, {
     "name": "Bill Papian",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["The previous memory systems used either mercury delay lines or electrostatic tubes.", "Access time for the core memory system in project Whirlwind was 9 micro seconds, as apposed to 25 microseconds with electrostatic tubes. Core memory was also much more reliable than the previous memory systems as well (Mercury delay lines often fell out of sync with the clock and were very sensitive to temperature).", "It became the main memory system of mainframe computers for the next 20 years until the invention of integrated circuits.", "IBM re-released their model 701 and 702 as models 704 and 705 with magnetic-core memory in 1954."],
@@ -653,7 +653,7 @@
   "people": [{
     "name": "John Backus",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["It was a highly complex system that was an alternative to assemblers being written for individual computer models and was initially used by the IBM 704 mainframes.", "The first version took almost 3 years to write and contained over 18,000 instructions (as apposed to the EDSACs initial orders which had 30).", "The second version took another two years and contained over 50,000 instructions.", "It was the first programming language standardized by the American National Standards Institute in 1966."],
@@ -667,12 +667,12 @@
   "people": [{
     "name": "Ken Olson",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Harlan Anderson",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Olson and Anderson had worked on Project Whirlwind at Lincoln Laboratory.", "Their first computer was the Programmed Data Processor, or PDP-1. Released in 1960, the PDP series was targeted at the scientific community, rather than commercial businesses", "Because it was targeted at technical users, DEC didn't need to build additional hardware peripherals, or user friendly software packages and didn't provide hands on technical support. This made the computers much cheaper to manufacture and they sold at nearly a tenth of the price of most other computers at the time.", "The company was eventually acquired by Compaq and then in turn by Hewlett-Packard"],
@@ -686,17 +686,17 @@
   "people": [{
     "name": "Robert Noyce",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Gordon Moore",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Sherman Fairchild",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Robert Noyce and Gordon Moore (known for Moore's law) were among 8 engineers who founded Fairchild Semiconductor in San Jose California with funding from Sherman Fairchild.", "The company was responsible for many advancements in semiconductor technology including the first 'monolithic' integrated circuits built by Robert Noyce in 1959", "While the ideas around integrated circuits had been developed over the last decade notably by Jack Kilby at Texas Instruments, Noyces integrated circuits were the first to use silicon instead of germanium and became vastly more popular."],
@@ -710,7 +710,7 @@
   "people": [{
     "name": "Grace Murray Hopper",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["The committee included Grace Murray Hopper, inventor of the A-0 and FLOW-MATIC compilers", "As new compilers and languages began to emerge, government and business operations were having trouble migrating between systems or hardware because each time they did, they had to re-write all of their software in a new compiler/language.", "The COmmon Business-Oriented Language (COBOL) was written to address this problem.", "COBOL used very English like phrases like `MOVE X TO Y` or `SUBTRACT TAX FROM GROSS PAY GIVING NET PAY`.", "In late 1960 the US government declared that it would not work with any computers or mainframes that did not include a COBOL compiler."],
@@ -722,9 +722,9 @@
   "location": null,
   "description": "The model 1401 was a breakthrough product for IBM that catapulted them into the lead of the computer business race.",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["It used transistor based processors instead of the tubes used in previous models (such as the 650) and used the much faster magnetic core memory over the magnetic drums.", "While processors were all the rage - software still needed to be written for all of these machines. So alongside the Model 1401, IBM developed a programming system called Report Program Generator which allowed previous users of old accounting machines to learn to write there own software.", "IBM also started releasing and selling large suites of software for different business applications that companies could purchase and install on their IBM machines.", "The 1401 also came with a state of the art printer that was capable of printing 600 lines per minute - almost 4x faster than the standard accounting machines in use at the time.", "The 1401 quickly became integral to the banking, retail, insurance, and manufacturing industries"],
@@ -733,12 +733,12 @@
 },{
   "date": "1960-03",
   "name": "Man-Computer Symbiosis",
-  "location": "MIT Massachusetts",
+  "location": "Massachusetts Institute of Technology Massachusetts",
   "description": "'Man-Computer Symbiosis' was a paper published by MIT psychologist and computer scientist J.C.R Licklider.",
   "people": [{
     "name": "J.C.R Licklider",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["The main concept promoted in this paper was that computers should be machines designed to augment human intelligence rather than replace it. This was apposed to the mainstream idea of the day that computers would eventually develop into A.I that could rival humans in cognition and pattern matching and problem solving.", "Licklider argued that computers should be used to complete more low level tasks such as looking up facts, making graphs and presentations, and performing mathematical calculations, rather than high level problem solving."],
@@ -747,27 +747,27 @@
 }, {
   "date": "1961-11",
   "name": "MIT's Compatible Time Sharing System (CTSS)",
-  "location": "MIT Massachusetts",
+  "location": "Massachusetts Institute of Technology Massachusetts",
   "description": "A time sharing computer was a computer with multiple terminals attached that allowed multiple users to independently use the computer.",
   "people": [{
     "name": "Christopher Strachey",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "John Mcarthy",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }, {
     "name": "Robert Fano",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Fernando Corbato",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["The idea for time-sharing computers was initially published by British computer scientist Christopher Strachey, but picked up and developed by John Mcarthy (also a pioneer in A.I) and other professors at MIT.", "The CTSS was developed by Robert Fans and Fernando Corbato at MIT and was the first implementation of a time sharing computer.", "The computer only supported up to 3 terminals.","Time sharing computer systems would became hugely popular in the 1970s and had an influence on the development of the internet."],
@@ -781,7 +781,7 @@
   "people": [{
     "name": "J.C.R Licklider",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Licklider was also a huge influence on the use of time sharing computers as well as interactive and personal computing.", "ARPA was initially developed in 1957 in a response to the Soviet Union launching it's first satellite."],
@@ -790,18 +790,18 @@
 },{
   "date": "1963-01",
   "name": "Ivan Sutherland's Sketchpad",
-  "location": "MIT Massachusetts",
+  "location": "Massachusetts Institute of Technology Massachusetts United States",
   "description": "Ivan Sutherland earned his PH.D at MIT where he presented the Sketchpad, a computer design program he built at MIT's Lincoln laboratory that allowed users to draw directly onto a monitor using a light emitting pen",
   "people": [{
     "name": "Ivan Sutherland",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },
   {
     "name": "J.C.R Licklider",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["It was influenced by Vaneuvar Bush's Memex from 1945.", "It also was pioneering for Object Oriented Programming. The program was written in an assembler language on a computer called the TX-2, which had been built with specific memory architecture that allowed certain objects to be efficiently tied to 'instances' of that object and for changes of the master object to be propagated to the corresponding instances.", "It was heavily influential on the development of GUIs and Computer Aided Design (CAD) software.", "Sutherland went on to teach at the University of Utah where he worked at a research laboratory funded by J.C.R. Licklider and ARPA. His work was very much in line with Lickliders ideas from Man-Computer Symbiosis.", "Sutherland won the Turing award in 1988 for Sketchpad."],
@@ -810,22 +810,22 @@
 },{
   "date": "1963-07-01",
   "name": "Project MAC",
-  "location": "MIT Massachusetts",
+  "location": "Massachusetts Institute of Technology Massachusetts",
   "description": "The Multiple Access Computer was a successor of the CTSS system developed by Robert Fano and Fernando Corbato 2 years earlier.",
   "people": [{
     "name": "Robert Fano",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Fernando Corbato",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "J.C.R Licklider",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Was built around an IBM 7094 mainframe computer which was an evolution of the 700 series from 1954", "Was developed to be user friendly allowing users to write and run programs, perform calculations and even prepare and edit documents. Hence it was influential on the development of many word processors as well as the UNIX operating system.", "Funded by J.C.R Licklider at ARPA and developed by Fano and Corbato at MIT, Project MAC was a time-sharing system with 160 terminals where up to 30 could be active at any one time.", "It was fully completed in 1965 but was so in demand that a larger system was required. This lead to the development of a time-sharing system known as MULTICS."],
@@ -834,12 +834,12 @@
 },{
   "date": "1964",
   "name": "American Airlines and IBM complete SABRE",
-  "location": "Briarcliff Manor New York U.S",
+  "location": "Briarcliff Manor New York United States",
   "description": "The Semi-Automatic Business Research Environment (SABRE) was a real-time airline booking and management system developed based on the principles of Project Whirlwind.",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["In the 1950s, Airlines experienced a huge boom in flight reservations as air travel become more commonly accessible. Their booking system however was still using punch card machinery from the beginning of the century, was very slow, and error prone.", "IBM developed SABRE at Briarcliff Manor in New York to create a real-time airline booking environment where clerks could access flights, bookings and passenger info all in the same place.", "The system was built around 2 IBM mainframe computers and was connected to over 1,000 terminals in 50 cities over 10,000 miles of leased telecom lines."],
@@ -848,12 +848,12 @@
 }, {
   "date": "1964-04-07",
   "name": "IBM announces the System 360",
-  "location": "New York U.S",
+  "location": "New York United States",
   "description": "The IBM System 360 was a suite of 6 mainframe computer models that were hardware and software compatible with one another.",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Before the System 360, IBM had a number of different mainframes on the market all of which had different mechanisms for programming and operating. Software suites for a given application (eg banking) had to be written for every model and if a user wanted to upgrade to a newer machine, they would have to purchase the corresponding software implementation or worse, re-write custom software from scratch.", "Largely built in New York, but also in IBM factories in England.", "The suite grew to over 14 different models by 1978.", "Introduced computing standards such as 8-bit bytes and byte-addressable memory"],
@@ -867,12 +867,12 @@
   "people": [{
     "name": "John Kemeny",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Thomas E. Kurtz",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Developed at Dartmouth college by John Kemeny and Thomas E. Kurtz was fully operational on May 1st 1964.", "The computer equipment was supplied by General Electric but came without any software. This lead Kemeny and Kurtz to develop their own programming language called the Beginners All-purpose Symbolic Instruction Code, otherwise known as BASIC.", "Many schools began teaching BASIC and by 1968, 23 schools and colleges in New England were using the Dartmouth System.", "BASIC soon became the go to language for college math and science students and any computer manufacturer that wanted to sell to universities needed to include a BASIC compiler if it wanted to compete in that market."],
@@ -884,9 +884,9 @@
   "location": "Maynard Massachusetts",
   "description": "Released by the Digital Equipment Corporation (DEC), The PDP-8 was one of the first computers to use integrated circuits and was thus far smaller and cheaper than most other computer in existence at the time.",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["The PDP-8 cost $18,000 (as apposed to most mainframes which could cost up to $1MM) and was the size of a packing case.", "As apposed to the mainframe and time sharing systems of the 60s, the PDP-8 was small and often used by only one or relatively few users, and marked the dawn of the personal computing era."],
@@ -895,17 +895,17 @@
 },{
   "date": "1967-01",
   "name": "MULTICS",
-  "location": "MIT Massachusetts",
+  "location": "Massachusetts Institute of Technology Massachusetts",
   "description": "The MULTiplexed Information and Computer Service was a time-sharing computer that was the successor to Project MAC.",
   "people": [{
     "name": "Ken Thompson",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Dennis Ritchie",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Developed by the same team at MIT it could support 1,000 terminals and up to 300 in use at the same time.", "While project MAC was developed around IBM hardware, for MULTICS the team decided to work with General Electric to build custom time-sharing hardware and Bell Labs to write the software.", "The system was not very successful and had a number of issues, but it lead to many novel innovations in computer and software design including, virtual memory, dynamic linking, online reconfiguration and hierarchical filesystems", "Two of the programmers who worked on MULTICS, Ken Thompson and Dennis Ritchie, went on to write the first version of the UNIX operating system.", "General Electric and Bell labs did eventually drop out of the project and MULTICs was taken over by Honeywell in 1970."],
@@ -919,12 +919,12 @@
   "people": [{
     "name": "Robert Noyce",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Gordon Moore",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Intel went on to become (and still is) one of the largest semiconductor and computer processors"],
@@ -938,7 +938,7 @@
   "people": [{
     "name": "Edsger W. Dijkstra",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["In the 1960s, software production was as much as an art as a science. Everyone built software their own way, and production was heavily experimental.", "The Garmisch conferences helped organize software engineering as a true engineering discipline and many of the principles discussed and developed were adopted by software developers world wide.", "One of the members of the committee was Edsger W. Dijkstra, who coined the term structured programming, a style of programming that divided tasks into control structures such as sequences of sub routines, selection statements (such as if - then - else ), and iterations (eg for/while/do)", "Dijkstra published a letter called 'Go To Statement Considered Harmful' which stated that the commonly used 'GO TO' instruction, which allowed programs to jump to arbitrary lines of the program, was not only unnecessary in the structured programming paradigm, but also destructive to code in some cases, rendering it inefficient, less readable, and harder to maintain.", "Multiple programming languages have been created under the structured programming paradigm, namely ALGOL (an imperative programming language developed as an alternative to FORTRAN and COBOL), PL/I (the programming language released for IBMs system 360) Pascal (a language developed off of ALGOL), and ADA (originally developed by the US Department of Defense aimed at real-time systems)."],
@@ -952,13 +952,13 @@
   "people": [{
     "name": "Douglas Engelbart",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },
   {
     "name": "J.C.R Licklider",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["One of the laboratories funded by ARPA was called the Human Factors Research Center founded at the Stanford Research Institute (SRI) in Menlo Park CA.", "The laboratory was founded in 1963 and headed by a man named Doug Engelbart. Engelbart's research was geared towards designing machines to manage personal information, a goal that was very much in line with J.C.R Lickliders vision of 'man-computer symbiosis", "The research center developed a machine called the 'oN-Line System' (NLS) which was demoed at The National Computer Conference in San Francisco in December 1968.", "The machine, while too expensive to be practical, was innovative in a number of ways, including the use of a computer 'mouse' and was the first public presentation of the use of hypertext documents.", "The presentation was influential on the development of the GUI or WIMP interface that made personal computers more user friendly in the 1980s."],
@@ -972,7 +972,7 @@
   "people": [{
     "name": "Alan Kay",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["In 1969 Alan Kay presented his PH.D thesis at the University of Utah on a machine he called the Reactive Engine, though later renamed to the Dynabook.", "Alan Kay was advised by Ivan Sutherland, who's work on a program called the Sketchpad in 1963 was heavily influential on Kay.", "Along with Doug Engelbart's Electronic Office, the Dynabook was a key influence on the development of the GUI and WIMP interface.","Alan Kay later went on to work at the Xerox Corporation."],
@@ -986,12 +986,12 @@
   "people": [{
     "name": "Ken Thompson",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Dennis Ritchie",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Unsatisfied with the results of the MULTICS project, Bell Labs engineers Dennis Ritchie and Ken Thompson set out to make a better system with a simpler approach", "Working on a PDP-7 computer (predecessor to the PDP-8 made by Digital Equipment Corporation), they developed a simpler operating system originally called UNICS (a play on the name MULTICS).", "* Dennis Ritchie also created the C programming language which was a language specifically designed to work on operating systems.", "Over the next few years UNICS (eventually renamed UNIX) was developed and rewritten in C and ported to a PDP-11 computer.", "Unix and the C programming languages have been incredibly influential in computer sciences through today, leading to similar operating systems being developed at UC Berkley (BSD) and Sun Microsystems (SunOS) as well as the Linux operating system.", "Thompson and Ritchie won the Turing Award in 1983 for Unix."],
@@ -1000,12 +1000,12 @@
 },{
   "date": "1970-06",
   "name": "IBM announces System 370",
-  "location": "New York U.S.",
+  "location": "New York United States",
   "description": "System 370 was a suite of models akin to System 360 but with upgraded hardware.",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["True integrated circuits instead of Solid Logic Technology (SLT)", "Semiconductor memory replaced magnetic-core memory", "Supported time sharing via Dynamic Address Translation (DAT) which allowed for Virtual Memory. The DAT hardware was a precursor to the modern Memory Management Unit (MMU).", "This was not the first instance of virtual memory but served to popularize it in computer design."],
@@ -1019,7 +1019,7 @@
   "people": [{
     "name": "Ted Hoff",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["It had a transistor gate length of approximately 10µm (current cpus have transistor gates measured in the nanometers).", "It could process 4bits at a time, but led to the development of a number of more powerful models including the 8080 which was an 8bit processor.", "It was marketed commercially in November 1971 for $1,000", "It was originally developed for a calculator manufacturing company called Busicom, but at the time calculator prices were dropping so rapidly that Busicom negotiated down the price of the chip in exchange for the right for intel to market and sell it on their product lineup."],
@@ -1033,7 +1033,7 @@
   "people": [{
     "name": "Alan Kay",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Alan Kay from the University of Utah was amongst researches on the team that developed the Alto Computers.", "It was a Desktop computer that incorporated graphically displayed, typeset documents, much like Alan Kay had envisaged in his publication on the Dynabook."],
@@ -1045,9 +1045,9 @@
   "location": "Albuquerque NM",
   "description": "The Altair was the first microprocessor-based computer, and can loosely be considered the first personal computer. ",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["It was produced in Albuquerque New Mexico by Micro Instumentation Telemetry Systems (MITS).", "As of the early 1970s, computers were still mostly out of reach of the general public. There were two main groups of computer users, hardcore technophile hobbyists, and academics and professionals using some form of a mainframe or time-sharing computer such as the Dartmouth time-sharing system or Multics etc. As the microprocessor industry boomed however, both computer prices and sizes fell and became more available to the lay person.", "The Altair 8800 was a small, inexpensive (<$400) minicomputer that was marketed in hobbyist magazines.", "The original consisted of a box with an intel 8080 microprocesor and some switches and lights. Even when assembled it barely did anything at all. It had to be programmed in binary by configuring the switches but allowed hobbyists to quickly assemble and tinker with a computer.", "The popularity of the 8800 however, opened up a large market for companies to develop add-ons to the machine such as teletypes, extra memory extensions, and additional storage.", "It also featured the S-100 Bus which became a standard design for computer Buses and was used in a number of hobbyist and home computers in the 70s and influenced the design of modern personal computers."],
@@ -1061,12 +1061,12 @@
   "people": [{
     "name": "Paul Allen",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Bill Gates",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Paul Allen later became software director at MITS.", "The BASIC interpreter allowed the Altair 8800 to be much a much more flexible machine and increased sales of peripherals and addons for MITS, partially because the machine would need more memory just to run the interpreter.", "Over the next two years, hundreds of computer and tech startups launched across the country, developing microcomputers, add-ons and software."],
@@ -1080,17 +1080,17 @@
   "people": [{
     "name": "Gordon French",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Steve Jobs",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Steve Wozniak",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["The club was most notably influential on the computer business in that Steve Jobs and Steve Wozniak attended it and through it entered the microcomputer business.", "The first meeting was held on March 5th in founder Gordon French's garage and Steve Wozniak was in attendance. Together with Steve Jobs they created the Apple Computer Company about a year later on April 1st 1976 in Cupertino California"],
@@ -1104,12 +1104,12 @@
   "people": [{
     "name": "Steve Jobs",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Steve Wozniak",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["After attending the homebrew computer club, Steve Wozniak was inspired to build his own microcomputer. He built the prototype and demoed it at the club.", "The computer was basically just a circuit board, but was distinctly different from the Altair 8800 in that you could plug in a keyboard and a television to get working input and output.", "Upon seeing the interest in the computer Steve Jobs suggested they start selling it, initially to a store called the Byte Shop in Mountain View California."],
@@ -1123,12 +1123,12 @@
   "people": [{
     "name": "Steve Jobs",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Steve Wozniak",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["Steve Jobs and Wozniak realized that to successfully sell a commercial computer it would need to bundle all of the necessary components together. It would need to plug into an ordinary household outlet, have a keyboard and monitor, some form of long-term storage, and software to make it user friendly. Jobs and Wozniak designed such a machine and in April 1977, demoed the Apple II at the West Coast Computer Faire in San Francisco.", "Also released at the time was the Commodore PET. The two machines were similar and both became very popular.","In August the same year, Tandy Corporation entered the market with the TRS-80 and sold it through it's subsidiary, Radio Shack. The TRS-80 was cheaper than the PET and the Apple II as it had to be plugged in to a TV for output. The 3 computers were the most popular personal computers in the late 1970s.", "The growth of personal computers was largely defined by the software that was developed for them. While most software being developed up until the late 70s was system software, such as Microsoft Basic, personal computers opened up the door of possibilities for developing application software. The key applications that allowed personal computers to become effective business tools were spreadsheets, word processors, and databases."],
@@ -1140,9 +1140,9 @@
   "location": "Chicago IL",
   "description": "In 1981, Xerox developed and presented a commercial version of the Alto called the Xerox Star, or alternatively, the model 8010 workstation, at the National Computer Conference in Chicago IL.",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["It had a GUI and a mouse and incorporated the now familiar desktop look that included icons and folders.", "The presentation itself was very well received, but the product itself didn't do too well. Technically the machine was ahead of it's time, but it was too expensive and not well marketed.", "It did however have an impact on Steve Jobs, who upon visiting the Xerox Paolo Alto Research Center (PARC) in 1979, is quoted as saying 'Why isn't Xerox marketing this? .. You could blow everybody away!'"],
@@ -1154,9 +1154,9 @@
   "location": "Boca Raton Florida",
   "description": "While late to the game, IBM finally decided to enter the personal computer market in 1980 when they began to design their first machine in an IBM factory in Boca Raton Florida. The project was known a project chess.",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["In July 1980 IBM approached Microsoft headquarters to develop the operating system. At the time Microsoft was too small to actually develop an operating system from scratch so Bill Gates purchased a piece of software from a firm called Seattle Computer Products for $30,000 and adapted it for IBMs use.", "The IBM PC along with their new operating system, MS-DOS, went on sale on August 12th 1981.","They were a huge success, largely due to IBM's brand awareness and propelled personal computers into the public market. Over the next few years the IBM PC became the industry standard, driving many start up PC firms out of business while the rest were forced to clone IBMs design and develop IBM compatible machines.", "The one exception was Apple. Steve Job's vision for the company was to make computer that were more user friendly and Apple attempted to differentiate themselves by designing  better, more user friendly software than Microsoft."],
@@ -1168,9 +1168,9 @@
   "location": "Cupertino California",
   "description": "The Lisa was Apples response to the Xerox Star. It was similarly designed with all the user interactive features of the Star including GUI and Mouse.",
   "people": [{
-    "name": "",
+    "name": null,
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["However, it was a very complex machine and worked sluggishly. It was extremely overpriced and quickly became a complete failure."],
@@ -1184,12 +1184,12 @@
   "people": [{
     "name": "Steve Jobs",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   },{
     "name": "Jef Raskin",
     "dob": null,
-    "place_of_birth": "",
+    "place_of_birth": null,
     "link": null
   }],
   "bullets": ["The Macintosh project was initially started in 1979 by Jef Raskin, manager of advanced systems at Apple, but was overtaken by Steve Jobs in 1982.", "Initially the design of the computer was done by just 8 engineers, but as release got closer the team was expanded to 47 people. All 47 signed their name into the molding for the original Macintosh case, and these cases are now highly valuable collectors items.", "On January 22nd, Apple aired their famous Super Bowl ad in which a young woman storms into a room full of sullen, grey clad workers watching a Big Brother like figure on a large viewing monitor and smashes the monitor with a sledge hammer.", "The Macintosh was released two days later and received a lot of media attention. It was much sleeker than the Lisa and was a fifth of the price, but was not the huge commercial success apple had been hoping for.", "It was popular amongst media and publishing companies as well as schools, as its ease of use made it ideal for students or children. Unfortunately it was not a huge success in the business market, which largely still ran on IBM machines.", "In an attempt to break into the business market, apple hired many external software companies to design business applications for the Macintosh, but most were unsuccessful. In fact the main software company to benefit from designing applications for the Macintosh in the 1980s was Microsoft.", "Developing software for Apple, Microsoft improved upon it's software design for business applications, and got a first hand look into the technology that power the Macintosh's GUI which influenced the design of the Windows Operating system."],
